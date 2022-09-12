@@ -1,0 +1,248 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caudex&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif+HK:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Lusitana&family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Bebas+Neue&family=Cinzel&family=Crimson+Text&family=EB+Garamond&family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cormorant:wght@700&family=DM+Serif+Text&family=Michroma&family=Monoton&family=Old+Standard+TT:wght@700&family=Philosopher:wght@700&family=Rozha+One&family=Shrikhand&family=Spectral:wght@700&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Gravitas+One&family=Italiana&family=Libre+Barcode+39+Text&family=Major+Mono+Display&family=Megrim&family=Montserrat+Subrayada:wght@700&family=MuseoModerno:wght@700&family=Ruslan+Display&family=Slackey&display=swap'); */
+
+
+/* body */
+
+html, body {
+    background: linear-gradient(to top left, #1d261b, #627043, #f0d4a1);
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+     padding: 0;   
+}
+
+/* end body */
+
+/* nav bar */
+
+
+.container div {
+    display: flex;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgb(52, 71, 45);
+  
+ }
+  
+ .container div label {
+    font-size: 37px;
+    height: 100%;
+    width: 95px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+    background-size: 30px;
+ }
+ 
+ .logo{
+    height: 80px;
+    width: 100px;
+ }  
+ 
+
+ .container div label:hover {
+    color: #fff;
+    background: rgb(63, 81, 52);
+ }
+  
+ input[type=checkbox] {
+    display: none;
+   
+ }
+  
+.container nav{
+    position: absolute;
+    top: 69px;
+    bottom: 365px;
+    width: 0px;
+    overflow: hidden;
+    transition: .5s ease;
+ }
+  
+.container nav ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Noto Serif HK', serif;
+    font-weight: 900%;
+    color: rgb(191, 239, 185);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: transparent;
+    text-shadow: #829c51 3px 5px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    padding: 10px 30px;
+    height: 50px;
+    transition: .5s ease;
+ }
+
+
+ .container nav ul li a:hover{
+    width: 50%;
+    background: rgb(63, 81, 52);
+    color: #fff;
+    /* border-right: 5px solid #fff; */
+    font-style: italic;
+ }
+  
+ input[type=checkbox]:checked ~ nav{
+    width: 250px;
+ }
+ 
+/* end nav bar */
+
+/* home section */
+
+.home{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding:100px;
+    text-align: center;
+    /* background-color: gray; */
+}
+
+
+.it h1 {
+    text-align: right;
+    font-size: 55px;
+    line-height: 30px;
+    margin-right: 10px;
+    color: rgb(173, 217, 173);
+    /* background-image:
+       linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-stroke: 1px rgb(197, 230, 200); */
+}
+.name {
+   text-align: right;
+   font-size: 160px;
+   line-height: 130px;
+   font-family: 'Italiana', serif;
+   color: transparent;
+   background-image:
+       linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
+   background-clip: text;
+   -webkit-text-stroke: 1px rgb(197, 230, 200);
+}
+
+.it h3 {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 24px;
+    color: rgb(173, 217, 173);
+    line-height: 40px;
+}
+
+.images {
+    top: 0; /*  puts image closer to top of page */ 
+    left: 100px;
+    /* right: 20px; */
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    
+ }
+  
+ .images img {
+    height: 80%;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+ }
+  
+ .images:hover .shape {
+    bottom: 40px;
+ }
+  
+ .images:hover .girl {
+    left: 45%;
+ }
+ 
+/* home section */
+
+
+
+
+
+
+/* about section */
+
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:100px;
+    text-align: center;
+    background-color: red;
+}
+
+/* end about section */
+
+
+
+
+
+
+
+
+
+/* skills section */
+
+.skills{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:100px;
+    text-align: center;
+    background-color: rgb(0, 8, 255);
+}
+
+/* end skills section */
+
+/* project section */
+.projects{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:100px;
+    text-align: center;
+    background-color: gold;
+}
+
+
+/* end project section */
+
+
+/* footer section */
+.footer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:100px;
+    text-align: center;
+    background-color: green;
+}
+
+
+/* end footer section */
+
+
+
+
