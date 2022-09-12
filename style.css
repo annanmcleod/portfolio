@@ -24,7 +24,7 @@ html, body {
 
 * {
     margin: 0;
-     padding: 0;   
+    padding: 0;   
 }
 
 /* end body */
@@ -112,8 +112,8 @@ html, body {
 
 .home{
     margin-top: 0px;
-    margin-bottom: 100px;
-    padding:100px;
+    margin-bottom: 150px;
+    padding: 100px;
     text-align: center;
     /* background-color: gray; */
 }
@@ -178,33 +178,64 @@ html, body {
  .images:hover .girl {
     left: 45%;
  }
- 
-/* home section */
-
-
-
-
+/* end home section */
 
 
 /* about section */
-
-.about{
-    margin-top: 100px;
+.about {
+    margin-top: 250px;
     margin-bottom: 100px;
-    padding:100px;
+    padding-top: 0px;
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
 }
 
+.letters h4 {
+   font-size: 90px;
+   margin-top: 4%;
+   color: transparent;
+   z-index:  0;
+   position: absolute;
+   background-clip: text;
+   -webkit-text-stroke: 2px rgb(197, 230, 200);
+   letter-spacing: 1px;
+   writing-mode: vertical-rl;
+   transform: rotate(-180deg);
+   margin-left: -90px;
+   text-orientation: sideways-right;
+}
+.selfie{
+   margin-top: 0%;
+   margin-right: 500px;
+}
+
+.selfie img {
+   margin-top:0 px;
+   height: 500px;
+   position: relative;
+   top: 800%;
+   /* z-index: 40; */
+   width: 400px;
+   border-radius: 30%;
+
+}
+
+.description p{
+   font-size: 20px;
+   color:rgb(225, 248, 215);
+   margin-left: 90%;
+   margin-right: -40%;
+   margin-top: -54%;
+   /* margin-right: 0%; */
+   /* text-align: center; */
+   background-color: #748259;
+   line-height: 35px;
+   border-radius: 30% 10% 30% 10%;
+   padding: 4%
+}
+
+
 /* end about section */
-
-
-
-
-
-
-
-
 
 /* skills section */
 
@@ -213,7 +244,7 @@ html, body {
     margin-bottom: 100px;
     padding:100px;
     text-align: center;
-    background-color: rgb(0, 8, 255);
+    /* background-color: rgb(0, 8, 255); */
 }
 
 /* end skills section */
@@ -224,7 +255,7 @@ html, body {
     margin-bottom: 100px;
     padding:100px;
     text-align: center;
-    background-color: gold;
+    /* background-color: gold; */
 }
 
 
@@ -237,7 +268,7 @@ html, body {
     margin-bottom: 100px;
     padding:100px;
     text-align: center;
-    background-color: green;
+    /* background-color: green; */
 }
 
 
