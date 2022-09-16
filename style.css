@@ -945,7 +945,7 @@ input[type=checkbox]:checked ~ nav{
    }
    
    .images {
-      top: 3vw; /*  puts image closer to top of page */ 
+      top: 5vw; /*  puts image closer to top of page */ 
       left: 20vw;
       /* right: 20px; */
       width: 25vw;
@@ -3548,7 +3548,5 @@ input[type=checkbox]:checked ~ nav{
    }
    
 }
-   /* end 5th @media section */
 
 
-}
