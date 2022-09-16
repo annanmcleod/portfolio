@@ -1597,7 +1597,7 @@ input[type=checkbox]:checked ~ nav{
 
 /* start 4th @media section */
 
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
 
    html, body {
       background: linear-gradient(to top left, #1d261b, #627043, #f0d4a1);
@@ -1616,7 +1616,7 @@ input[type=checkbox]:checked ~ nav{
    
    .container div {
       display: flex;
-      height: 50px;
+      height: 58px;
       background: rgba(0, 0, 0, 0.2);
       box-shadow: 0 2px 5px rgb(52, 71, 45);
    }
@@ -1624,7 +1624,7 @@ input[type=checkbox]:checked ~ nav{
    .container div label {
       font-size: 37px;
       height: 100%;
-      width: 95px;
+      width: 70px;
       line-height: 60px;
       text-align: center;
       cursor: pointer;
@@ -1633,15 +1633,15 @@ input[type=checkbox]:checked ~ nav{
    }
    
    .logo{
-      height: 7.5vw;
-      width: 11vw;
+      height: 9vw;
+      width: 12vw;
    }  
    
    
    .container div label:hover {
       color: #fff;
       background: rgb(63, 81, 52);
-      width: 9%;
+      width: 12%;
    }
       
    input[type=checkbox] {
@@ -1651,7 +1651,7 @@ input[type=checkbox]:checked ~ nav{
       
    .container nav{
       position: absolute;
-      top: 50px;
+      top: 59px;
       bottom: 330px;
       width: 0px;
       overflow: hidden;
@@ -1995,7 +1995,7 @@ input[type=checkbox]:checked ~ nav{
 
 /* start 5th @media section */
 
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 599px) {
 
    html, body {
       background: linear-gradient(to top left, #1d261b, #627043, #f0d4a1);
@@ -2031,7 +2031,7 @@ input[type=checkbox]:checked ~ nav{
    }
    
    .logo{
-      height: 9vw;
+      height: 7vw;
       width: 9vw;
    }  
    
