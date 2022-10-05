@@ -519,8 +519,9 @@ html, body {
      font-family: 'Italiana', serif;
      color: transparent;
      background-image:
-         linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
-     background-clip: text;
+         -webkit-linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
+     -webkit-background-clip: text;
+             background-clip: text;
      -webkit-text-stroke: 1px rgb(197, 230, 200);
   }
   
@@ -933,10 +934,10 @@ html, body {
    }
     
    .images img {
-      height: 20vw;
+      height: 18vw;
       width: 25vw;
       position: absolute;
-      left: 50%;
+      left: 40%;
       bottom: 0;
       transform: translateX(-50%);
       transition: bottom 1s, left 1s;
@@ -1116,7 +1117,7 @@ html, body {
    .social-tooltip{
      display: flex;
      gap: 20px;
-     margin-left: 35%;
+     margin-left: 35.2%;
    }
    .social-tooltip div{ 
      position: relative;
