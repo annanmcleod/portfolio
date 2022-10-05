@@ -861,7 +861,7 @@ html, body {
    /* home section */
    
    .home{
-      margin-top: 0px;
+      margin-top: 0%;
       margin-bottom: 150px;
       padding: 100px;
       text-align: center;
@@ -884,8 +884,9 @@ html, body {
      font-family: 'Italiana', serif;
      color: transparent;
      background-image:
-         linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
-     background-clip: text;
+         -webkit-linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
+     -webkit-background-clip: text;
+            background-clip: text;
      -webkit-text-stroke: 1px rgb(197, 230, 200);
    }
    
@@ -930,7 +931,7 @@ html, body {
    
    /* about section */
    .about {
-      margin-top: 250px;
+      margin-top: 10%;
       margin-bottom: 100px;
       padding-top: 0px;
       text-align: center;
@@ -972,7 +973,7 @@ html, body {
    /* skills section */
    
    .skills{
-      margin-top: 100px;
+      margin-top: 8%;
       margin-bottom: 100px;
       padding: 100px;
       text-align: center;
@@ -1020,7 +1021,7 @@ html, body {
    
    /* project section */
    .projects{
-      margin-top: 100px;
+      margin-top: 20%;
       margin-bottom: 100px;
       padding: 100px;
       text-align: center;
@@ -1073,8 +1074,6 @@ html, body {
    /* footer section */
    
    .footer{
-      /* margin-top: 100px; */
-      /* margin-bottom: 100px; */
       padding: 0px;
       text-align: center;
       /* background-color: green; */
@@ -1094,6 +1093,7 @@ html, body {
      gap: 20px;
      margin-left: 35.2%;
    }
+   
    .social-tooltip div{ 
      position: relative;
    }
@@ -1521,6 +1521,7 @@ input[type=checkbox]:checked ~ nav{
    border-radius: 5px;
    transform: translateX(-50%) scale(0);
    transition: all 0.2s ease-in-out;
+   text-decoration: none;
 }
 
 .copyright {
