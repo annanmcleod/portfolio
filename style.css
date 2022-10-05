@@ -439,7 +439,7 @@ html, body {
       width: 110px;
    }  
    
-  
+
    .container div label:hover {
       color: #fff;
       background: rgb(63, 81, 52);
@@ -687,7 +687,6 @@ html, body {
      text-align: center;
      padding: 9%;
      text-decoration: none;
-     
   }
   
   .project {
@@ -836,7 +835,7 @@ html, body {
    .container div label:hover {
       color: #fff;
       background: rgb(63, 81, 52);
-      width: 5%;
+      width: 8%;
    }
     
    input[type=checkbox] {
@@ -872,7 +871,7 @@ html, body {
    
    
    .container nav ul li a:hover{
-      width: 25%;
+      width: 30%;
       background: rgb(63, 81, 52);
       color: #fff;
       /* border-right: 5px solid #fff; */
