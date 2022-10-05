@@ -305,6 +305,7 @@ html, body {
    background: #5e6e4b;
    box-shadow: 1px 1px 5px rgba(218, 255, 197, 0.5);
    border-radius: 10px;
+   text-decoration: none;
 }
 
  .project-image {
@@ -693,6 +694,7 @@ html, body {
      background: #5e6e4b;
      box-shadow: 5px 1px 5px rgba(218, 255, 197, 0.5);
      border-radius: 10px;
+     text-decoration: none;
   }
   
    .project-image {
@@ -1465,6 +1467,7 @@ input[type=checkbox]:checked ~ nav{
    background: #5e6e4b;
    box-shadow: 1px 1px 5px rgba(218, 255, 197, 0.5);
    border-radius: 10px;
+   text-decoration: none;
 }
 
  .project-image {
@@ -1867,6 +1870,7 @@ input[type=checkbox]:checked ~ nav{
    background: #5e6e4b;
    box-shadow: 1px 1px 5px rgba(218, 255, 197, 0.5);
    border-radius: 10px;
+   text-decoration: none;
 }
 
  .project-image {
@@ -2271,6 +2275,7 @@ input[type=checkbox]:checked ~ nav{
       background: #5e6e4b;
       box-shadow: 1px 1px 5px rgba(218, 255, 197, 0.5);
       border-radius: 10px;
+      text-decoration: none;
    }
    
     .project-image {
@@ -3029,6 +3034,7 @@ input[type=checkbox]:checked ~ nav{
    background: #5e6e4b;
    box-shadow: 1px 1px 5px rgba(218, 255, 197, 0.5);
    border-radius: 10px;
+   text-decoration: none;
 }
 
  .project-image {
