@@ -84,7 +84,6 @@ html, body {
     width: 50%;
     background: rgb(63, 81, 52);
     color: #fff;
-    /* border-right: 5px solid #fff; */
     font-style: italic;
  }
   
@@ -135,7 +134,6 @@ html, body {
 .images {
     top: 0; /*  puts image closer to top of page */ 
     left: 100px;
-    /* right: 20px; */
     width: 45%;
     height: 80%;
     position: absolute;
@@ -201,8 +199,6 @@ html, body {
    margin-right: 65%;
    margin-top: -2%;
    font-family: 'Italiana', serif;
-   /* margin-right: 0%; */
-   /* text-align: center; */
    background-color: #748259;
    line-height: 35px;
    border-radius: 30% 10% 30% 10%;
@@ -245,10 +241,6 @@ html, body {
    border-radius: 2%;
    border-width: 7px;
    padding: 25px;
-   
-   
-  
-
 }
 
 .icons img {
@@ -257,7 +249,6 @@ html, body {
    border-color: #829c51;
    outline-color: white;
 }
-
 
 /* end skills section */
 
@@ -285,15 +276,6 @@ html, body {
    margin: 0;
    text-decoration: none;
 }
-
-/* .projects-section-header {
-  font-family: "Open Sans";
-  font-size: 30px;
-  max-width: 640px;
-  border-bottom: 0.2rem solid var(rgb(218, 159, 188));
-  position: relative;
-  left: 170px;
-} */
 
 .projects-section {
    text-align: center;
@@ -334,8 +316,6 @@ html, body {
 /* footer section */
 
 .footer{
-    /* margin-top: 100px; */
-    /* margin-bottom: 100px; */
     padding: 0px;
     text-align: center;
     /* background-color: green; */
@@ -482,7 +462,6 @@ html, body {
       width: 60%;
       background: rgb(63, 81, 52);
       color: #fff;
-      /* border-right: 5px solid #fff; */
       font-style: italic;
    }
     
@@ -508,11 +487,8 @@ html, body {
       line-height: 30px;
       margin-right: 200px;
       color: rgb(173, 217, 173);
-      /* background-image:
-         linear-gradient(-90deg, rgb(67, 102, 52), rgb(255, 255, 255));
-      background-clip: text;
-      -webkit-text-stroke: 1px rgb(197, 230, 200); */
   }
+
   .name {
      margin-right: 190px;
      font-size: 190px;
@@ -537,7 +513,6 @@ html, body {
   .images {
       top: -30%; /*  puts image closer to top of page */ 
       left: 70px;
-      /* right: 20px; */
       width: 45%;
       height: 80%;
       position: absolute;
@@ -874,7 +849,6 @@ html, body {
       width: 30%;
       background: rgb(63, 81, 52);
       color: #fff;
-      /* border-right: 5px solid #fff; */
       font-style: italic;
    }
     
