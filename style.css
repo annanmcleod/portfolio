@@ -802,7 +802,7 @@ html, body {
    }
    
    .logo{
-      height: 7vw;
+      height: 6vw;
       width: 8vw;
    }  
    
@@ -940,7 +940,7 @@ html, body {
    
    .letters h4 {
      font-size: 6vw;
-     margin-top: 8vw;
+     margin-top: 7vw;
      color: transparent;
      z-index:  0;
      position: absolute;
@@ -982,7 +982,7 @@ html, body {
    
    .skills h4 {
      font-size: 6vw;
-     margin-top: 18%;
+     margin-top: 14%;
      color: transparent;
      z-index:  0;
      position: absolute;
@@ -1039,7 +1039,7 @@ html, body {
      letter-spacing: 1px;
      writing-mode: vertical-rl;
      transform: rotate(-180deg);
-     margin-left: -160px;
+     margin-right: -260px;
      text-orientation: sideways-right;
    }
    
@@ -1048,16 +1048,6 @@ html, body {
      margin-right: 80px;
      margin-left: 90px;
      padding: 25px;
-     /* border-color: #829c51;
-     border-style:dotted;
-     border-radius: 2%;
-     border-width: 7px; */
-   
-     /* padding-right: 25px;
-     padding-left: 25px;
-     padding-top: 25px;
-     padding-bottom: 25px; */
-   
    }
    
    .screenshots img {
@@ -1066,7 +1056,6 @@ html, body {
      border-color: #829c51;
      outline-color: white;
    }
-   
    
    /* end project section */
    
@@ -1083,7 +1072,7 @@ html, body {
      color: white;
      font-weight: bold;
      font-size: 2vw;
-     margin-left: -5%;
+     margin-left: -4%;
      margin-top: 19%;
      line-height: 120px;
    }
@@ -1091,7 +1080,7 @@ html, body {
    .social-tooltip{
      display: flex;
      gap: 20px;
-     margin-left: 35.2%;
+     margin-left: 38%;
    }
    
    .social-tooltip div{ 
@@ -1123,12 +1112,12 @@ html, body {
      transition: all 0.2s ease-in-out;
    }
    
-   .copyright {
-     font-size: 20px;
+   .copyright p {
+     font-size: 2vw;
      color: rgb(255, 252, 252);
      font-family: 'Times New Roman', Times, serif;
-     margin-left: -1%;
-     margin-top: -20%;
+     margin-left: -3.5%;
+     margin-top: 14%;
    }
 }
 
