@@ -1039,7 +1039,7 @@ html, body {
      letter-spacing: 1px;
      writing-mode: vertical-rl;
      transform: rotate(-180deg);
-     margin-right: -260px;
+     margin-left: -160px;
      text-orientation: sideways-right;
    }
    
