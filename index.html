@@ -12,6 +12,7 @@
   </head>
 
 <body>
+  <header>
   <div class = "hero">
     <nav>
       <div>
@@ -21,25 +22,32 @@
           <li><a href = "#projects-section">Projects</a></li>
           <li><a href = "https://www.canva.com/design/DAFQ51UoZes/FGK8vjV3CgztvgeCFraZ2Q/view?utm_content=DAFQ51UoZes&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class = "btn">Resume</a></li>
         </ul>
-     </div>
+      </div>
     </nav>
 
-    <div class = "content">
-      <h1>Anna McLeod
-        <span>Anna McLeod</span>
-        <span>Anna McLeod</span>
-        <span>Software Developer & Web Designer</span>
-      </h1>
-    </div>
-    <p class = "short">
-      Hi! I'm a current student attending <a href="https://basecampcodingacademy.org/">Base Camp Coding Academy</a> in Water Valley, Mississippi. I currently reside in New Albany, Mississippi and have been commuting back and forth.
-      I'm an upcoming software developer who is passionate about bringing new ideas to the table.
-    </p>
+    <section>
+
+      <div class = "content">
+        <h1>Anna McLeod
+          <span>Anna McLeod</span>
+          <span>Anna McLeod</span>
+          <span>Software Developer & Web Designer</span>
+        </h1>
+      </div>
+      <p class = "short">
+        Hi! I'm a current student attending <a href="https://basecampcodingacademy.org/">Base Camp Coding Academy</a> in Water Valley, Mississippi. I currently reside in New Albany, Mississippi and have been commuting back and forth.
+        I'm an upcoming software developer who is passionate about bringing new ideas to the table.
+      </p>
+
+    </section>
+
   </div>
+  </header>
 
   <!-- About Me -->
 
   <section class = "about" id = "about-section">
+
     <div class = "main">
       <img src = "images/me.png">
       <div class = "about-text">
@@ -56,10 +64,12 @@
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Projects -->
 <section id = "projects-section">
+
   <div class = "service">
     <div class = "title">
       <h2>Projects</h2>
@@ -67,10 +77,10 @@
 
       <div class = "boxy">
         <div class = "card">
-          <figure class="snip1573"><img src = "images/loading16.png" alt = "Fictional Charity"/>
+          <figure class="snip1573"><img src = "images/retention.png" alt = "Fictional Charity"/>
             <div class = "pra">
               <figcaption>
-                <h4><u>Next Project<br></u><br>Next Project</h4>
+                <h4><u>Retention<br></u><br>This is a javascript unit project where the player is set with a time limit, flip count, and the cards. The player clicks on each card while trying to match each set before the time runs out.</h4>
               </figcaption>
             </div>
           </figure>
@@ -158,6 +168,7 @@
         </div>
       </div>
   </div>
+
 </section>
 
   <!-- <a href="#"><i class="fa fa-envelope-open-text fa-2x"></i></a> -->
@@ -179,6 +190,7 @@
   <!-- Footer -->
 
   <footer>
+
     <div class="outer_wrapper">
       <div class="wrapper">
   
@@ -238,131 +250,14 @@
     </div>
 
     <div class="footer-below">
-        Made with  <i class="fa fa-fw fa-heart fa-spin" style = "color:red;font-size:24px;"></i> by Anna McLeod
+        Made with  <i class="fa fa-fw fa-heart fa-spin" style = "color:red;font-size:35px;"></i> by Anna McLeod
     </div>
+
   </footer>
 </body>
 
 <button class="fa fa-home myButton" id="top"></button>
+<script src = "script.js"></script>
 
-    <script>
-
-      // home button
-     var sn = document.getElementById("top")
-
-     window.onscroll = function () {
-      if(pageYOffset >=700){
-    
-        sn.style.display="block";
-
-         } else{
-
-        sn.style.display="none";
-
-        }
-    } 
-
-    // chat button
-    sn.onclick = function () {
-      window.scrollTo(0,0);
-  }
-
-    function openForm() {
-                document.getElementById("myForm").style.cssText = "display: block;";
-            }
-            function closeForm() {
-                document.getElementById("myForm").style.cssText = "display: none;";
-            }
-
-  // cat animation
-            function init() { 
-  const catWrapper = document.querySelector('.cat_wrapper')
-  const wrapper = document.querySelector('.wrapper')
-  const cat = document.querySelector('.cat')
-  const head = document.querySelector('.cat_head')
-  const legs = document.querySelectorAll('.leg')
-  const pos = {
-    x: null,
-    y: null
-  }
-
-  const walk = () =>{
-    cat.classList.remove('first_pose')
-    legs.forEach(leg=>leg.classList.add('walk'))
-  }
-
-  const handleMouseMotion = e =>{
-    pos.x = e.clientX
-    pos.y = e.clientY
-    walk()
-  }
-
-  const handleTouchMotion = e =>{
-    if (!e.targetTouches) return
-    pos.x = e.targetTouches[0].offsetX
-    pos.y = e.targetTouches[0].offsetY
-    walk()
-  }
-
-  const turnRight = () =>{
-    cat.style.left = `${pos.x - 90}px`
-    cat.classList.remove('face_left')
-    cat.classList.add('face_right')
-  }
-
-  const turnLeft = () =>{
-    cat.style.left = `${pos.x + 10}px`
-    cat.classList.remove('face_right')
-    cat.classList.add('face_left')
-  }
-
-  const decideTurnDirection = () =>{
-    cat.getBoundingClientRect().x < pos.x ?
-      turnRight()
-      :
-      turnLeft()
-  }
-
-  const headMotion = () =>{
-    pos.y > (wrapper.clientHeight - 100) ?
-      head.style.top = '-15px'
-      :
-      head.style.top = '-30px'
-  }
-
-  const jump = () =>{
-    catWrapper.classList.remove('jump')
-    if (pos.y < (wrapper.clientHeight - 250)) {
-      setTimeout(()=>{
-        catWrapper.classList.add('jump')
-      },100)
-    } 
-  }
-
-  const decideStop = ()=>{
-    if (cat.classList.contains('face_right') && pos.x - 90 === cat.offsetLeft ||
-        cat.classList.contains('face_left') && pos.x + 10 === cat.offsetLeft) {
-      legs.forEach(leg=>leg.classList.remove('walk'))    
-    }
-  }
-  
-  setInterval(()=>{
-    if (!pos.x || !pos.y) return
-    decideTurnDirection()
-    headMotion()
-    decideStop()
-  },100)
-
-  setInterval(()=>{
-    if (!pos.x || !pos.y) return
-    jump()
-  },1000)
-
-  document.addEventListener('mousemove', handleMouseMotion)
-  document.addEventListener('mousemove', handleTouchMotion)
-}
-
-window.addEventListener('DOMContentLoaded', init)
-    </script>
 </html>
 
