@@ -921,6 +921,8 @@ textarea {
 
 /* @MEDIA STARTS */
 
+/* COMPUTER @MEDIA */
+
 @media only screen and (min-width: 2558px){
     nav {
       font-size: 65px;
@@ -1758,6 +1760,217 @@ textarea {
   }
 }
 
+@media only screen and (height: 650px) and (width: 1271px){
+  .hero {
+    height: 100vh;
+  }
+  nav {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 42%;
+    font-size: 33px;
+  } 
+  
+  h1 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -100%);
+    margin-right: -390px;
+    padding: 0;
+    font-size: 8rem;
+    color: transparent;
+    text-transform: uppercase;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-22px);
+  }
+
+  h1:hover span:nth-child(2) {
+    transform: translateY(22px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 102%;
+    font-size: 2.5rem;
+  }
+  
+  .short {
+    margin: 227px 307px 608px 31px;
+    font-size: 32px;
+    color: white;
+  } 
+
+  .short a {
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  
+  .about {
+    width: 100%;
+    padding: 110px 0px;
+  }
+
+  .about-text h2 {
+    font-size: 145px;
+    margin-bottom: 20px;
+    margin-left: 24%;
+    margin-right: -40%;
+  }
+  
+  .about img {
+    height: auto;
+    width: 730px;
+    margin-left: -20%;
+  }
+  
+  .about-text {
+    width: 980px;
+  }
+  .paragraphs {
+    line-height: 58px;
+    font-size: 48px;
+    margin-bottom: 45px;
+    margin-left: 25%;
+    margin-right: -30%;
+  }
+  
+  .containers{
+    top:231%;
+    left:59.8%;
+    width:409px;
+    height:95px;
+    border: 7px solid #6e3a4a;
+  }
+  .box{
+    width:300px;
+  }
+  .box span{
+    font-size:58px;
+  }
+  #text-ones{
+  left:50px;
+  top: 20%;
+  }
+  #text-twos{
+    left:-50px;
+    top: 20%;
+  }
+  .links a{
+    padding:30px;
+    font-size:4rem;
+  }
+  .containers:hover .ones{
+    transform:translateX(-300px);
+  }
+  .containers:hover .twos{
+    transform:translateX(300px);
+  }
+
+  .service {
+    padding: 130px 0px;
+  }
+  
+  .title h2 {
+    font-size: 145px;
+  }
+  
+  .boxy {
+    margin-left: 4%;
+  }
+  
+  .card {
+    height: 470px; 
+    width: 600px;
+    border: 7px double #a57584;
+  }
+  
+  .snip1573 {
+    font-size: 33px;
+  }
+
+  .snip1573 h4 {
+    font-size: 0.7em;
+    margin: -75px;
+  }
+  
+  .card .button {
+    font-size: 33px;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    border-radius: 30px;
+    margin-right: 2%;
+  }
+  
+  .card .button {
+    border: 5px solid #6e3a4a;
+    border-radius: 12px;
+  }
+  
+  .card .button:hover {
+    border: 5px solid #835467;
+  }
+  
+  footer .footer-below {
+    padding: 45px 0;
+    font-size: 62px;
+  }
+  
+  .wrapper {
+    height: calc(15vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+
+  .outer_wrapper {
+    height: 16vh;
+  }
+  
+  .cat {
+    bottom: -171px;
+  }
+  
+  .myButton {
+    left: 1%;
+    bottom: 2%;
+    height:120px;
+    width: 120px;
+    font-size: 60px;
+  }
+  
+    .chatOn {
+    right: 1%;
+    bottom: 2%;
+    width: 120px;
+  }
+  
+  .chat-popup {
+    border: 7px solid rgb(108, 60, 84);
+  }
+  
+  .popup-form {
+    width: 700px;
+    padding: 30px;
+    font-size: 35px;
+  }
+  
+  .popup-form input[type=text],
+  .popup-form input[type=password] {
+    font-size: 35px;
+  }
+  
+  textarea {
+    height: 220px;
+    font-size: 35px;
+  }
+  
+  .popup-form .button {
+    font-size: 35px;
+    border: 7px solid rgb(108, 60, 84);
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   
   nav {
@@ -1857,10 +2070,262 @@ textarea {
   textarea {
     font-size: 15px;
   }
-  
 }
 
-@media only screen and (width: 414px) {
+/* MOBILE @MEDIA */
+
+ @media only screen and (max-width: 891px) {
+    
+  .hero {
+    height: 60vh;
+  }
+  
+  nav ul{
+    display: none;
+  } 
+  
+  h1 {
+    top: 20%;
+    left: 50%;
+    margin-right: -400px;
+    font-size: 5rem;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 101%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+ 
+  .short {
+    margin: 150px 20px 600px 35px;
+    font-size: 18px;
+  } 
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  
+  .about img {
+    display: none;
+  }
+  
+  .about-text {
+    width: 350px;
+  }
+  
+  .about-text h2 {
+    font-size: 47px;
+  }
+  
+  .paragraphs {
+    letter-spacing: 0.2px;
+    font-size: 16px;
+  }
+  
+  .containers{
+    top:155%;
+    left:40%;
+    width:180px;
+    height:45px;
+  }
+
+  .box span{
+    font-size:20px;
+  }
+  #text-ones{
+  left:32px;
+  top: -17%;
+  }
+  #text-twos{
+    left:-40px;
+    top: -17%;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    width: 330px;
+  }
+
+  .boxy {
+    margin-left: 6%;
+  }
+  
+  footer .footer-below {
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 25px;
+    background-color: #896d7e;
+    font-family: 'El Messiri', sans-serif;
+  }
+  
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(42vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    display:none;
+  }
+  
+  .myButton {
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
+  
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
+  }
+
+ } 
+
+@media only screen and (max-width: 768px) {
+    
+  .hero {
+    height: 60vh;
+  }
+  
+  nav ul{
+    display: none;
+  } 
+  
+  h1 {
+    top: 20%;
+    left: 50%;
+    margin-right: -400px;
+    font-size: 5rem;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 101%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+ 
+  .short {
+    margin: 150px 20px 600px 35px;
+    font-size: 18px;
+  } 
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  
+  .about img {
+    display: none;
+  }
+  
+  .about-text {
+    width: 350px;
+  }
+  
+  .about-text h2 {
+    font-size: 47px;
+  }
+  
+  .paragraphs {
+    letter-spacing: 0.2px;
+    font-size: 16px;
+  }
+  
+  .containers{
+    top:155%;
+    left:38.7%;
+    width:180px;
+    height:45px;
+  }
+
+  .box span{
+    font-size:20px;
+  }
+  #text-ones{
+  left:32px;
+  top: -17%;
+  }
+  #text-twos{
+    left:-40px;
+    top: -17%;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    width: 330px;
+  }
+
+  .boxy {
+    margin-left: 2%;
+  }
+  
+  footer .footer-below {
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 25px;
+    background-color: #896d7e;
+    font-family: 'El Messiri', sans-serif;
+  }
+  
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(42vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    display:none;
+  }
+  
+  .myButton {
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
+  
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
+  }
+ }  
+
+@media only screen and (max-width: 430px) {
     
   .hero {
     height: 60vh;
@@ -1937,12 +2402,6 @@ textarea {
     top: -17%;
   }
 
-  /* .service {
-    background: #101010;
-    width: 100%;
-    padding: 25px 0px;
-  } */
-  
   .title h2 {
     font-size: 3rem;
     width: 330px;
@@ -1955,6 +2414,10 @@ textarea {
     font-size: 18px;
     background-color: #896d7e;
     font-family: 'El Messiri', sans-serif;
+  }
+
+  .boxy {
+    margin-left: 8%;
   }
   
   .outer_wrapper {
@@ -1988,3 +2451,5 @@ textarea {
   }
 
  }  
+
+ /* @MEDIA ENDS */
