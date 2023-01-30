@@ -17,7 +17,6 @@
 }
 
 nav {
-  /* font-family: 'Advent Pro', sans-serif; */
   /* font-family: 'Alegreya', serif; */
   /* font-family: 'Arima Madurai', cursive; */
   /* font-family: 'Cormorant', serif; */
@@ -25,7 +24,6 @@ nav {
   /* font-family: 'EB Garamond', serif; */
   /* font-family: 'El Messiri', sans-serif; */
   /* font-family: 'Italiana', serif; */
-  /* font-family: 'Poiret One', cursive; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,42 +59,21 @@ nav ul li a:hover {
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 10px;
-  /* transition: transform .4s; */
 }
-
-/* .btn a:hover{
-  transform: scale(1.2);
-} */
-
 /* NAVBAR ENDS */
 
 
 /* HOMEPAGE STARTS */
 
 h1 {
-  /* font-family: 'Advent Pro', sans-serif; */
-
-  /* font-family: 'Alegreya', serif; */
-
   /* font-family: 'Alice', serif; */
 
-  /* font-family: 'Arima Madurai', cursive; */
-
   /* font-family: 'EB Garamond', serif; */
-
-  /* font-family: 'El Messiri', sans-serif; */
-
-  /* font-family: 'Italiana', serif; */
 
   /* font-family: 'Libre Bodoni', serif; */
 
   /* font-family: 'Playfair Display', serif; */
 
-  /* font-family: 'Poiret One', cursive; */
- 
-  /* font-family: 'Titillium Web', sans-serif; */
-
-  /* font-family: 'Varela', sans-serif; */
   position: absolute;
   top: 45%;
   left: 35%;
@@ -120,7 +97,6 @@ h1 span:nth-child(1) {
 
 h1:hover span:nth-child(1) {
   transform: translateY(-12px);
-  /* color: rgb(58, 79, 61); */
   color: #e8dbe0;
 }
 
@@ -135,7 +111,6 @@ h1 span:nth-child(2) {
 }
 h1:hover span:nth-child(2) {
   transform: translateY(12px);
-  /* color: rgb(58, 79, 61); */
   color: #9a657a;
 }
 
@@ -155,7 +130,6 @@ h1 span:nth-child(3) {
 }
 h1:hover span:nth-child(3) {
     transform: translateY(-50%) scaleY(1);
-    /* color: rgb(58, 79, 61); */
     color: #643247;
 }
 
@@ -170,6 +144,8 @@ h1:hover span:nth-child(3) {
   margin: 300px 680px 600px 85px;
   font-size: 22px;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
 } 
 
 .short a {
@@ -565,20 +541,19 @@ footer .footer-below {
 .outer_wrapper {
   position: absolute;
   width: 100%;
-  height: 12vh;
-  overflow: hidden;
+  height: 10vh;
 }
 
 .wrapper {
   position: absolute;
-  height: calc(42vh - 190px);
+  height: calc(22vh - 190px);
   width: 100%;
   top: 0;
 }
 
 .cat {
   position: absolute;
-  bottom: 65px;
+  bottom: -85px;
   left: 100px;
   height: 30px;
   width: 60px;
@@ -1281,7 +1256,7 @@ textarea {
   
   .outer_wrapper {
     width: 100%;
-    height: 22vh;
+    height: 20vh;
   }
   
   .wrapper {
@@ -1334,7 +1309,7 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 1501px) and (max-width: 1593px) {
+@media only screen and (min-width: 1602px) and (max-width: 2552px) {
   
   .hero {
     height: 50vh;
@@ -1483,217 +1458,158 @@ textarea {
   }
 }
 
-@media only screen and (height: 1079px) and (width: 1919px){
-  nav {
-    font-size: 45px;
-  } 
+@media only screen and (min-width: 1501px) and (max-width: 1601px) {
   
-  nav ul li {
-    padding: 30px 55px;
+  .hero {
+    height: 50vh;
   }
 
-  .btn  {
-    border: 7px solid #835467;
-    border-radius: 14px;
-  }
-  
+  nav {
+    padding-left: 33%;
+    font-size: 54px;
+  } 
+    
   h1 {
-    top: 50%;
-    left: 31%;
-    font-size: 12rem;
+    top: 22%;
+    left: 40%;
+    margin-right: -353px;
+    font-size: 9rem;
   }
-  
+
   h1:hover span:nth-child(1) {
     transform: translateY(-22px);
   }
   
-
   h1:hover span:nth-child(2) {
     transform: translateY(22px);
   }
   
   h1 span:nth-child(3) {
-    width: 103%;
-    font-size: 3rem;
+    width: 102%;
+    font-size: 1.6rem;
     letter-spacing: 0.6rem;
   }
-  
+
   .short {
-    margin: 350px 980px 600px 75px;
-    font-size: 52px;
+    margin: 482px 400px 600px 99px;
+    font-size: 49px;
   } 
-  
-  .short a {
-    line-height: 28px;
-    letter-spacing: 1px;
-  }
-  
-  .about {
-    width: 100%;
-    padding: 110px 0px;
-  }
 
   .about-text h2 {
-    font-size: 145px;
-    margin-bottom: 20px;
-    margin-left: 30%;
-    margin-right: -40%;
+    font-size: 90px;
   }
   
-  .about img {
-    height: auto;
-    width: 730px;
-    margin-left: -50%;
-  }
-  
-  .about-text {
-    width: 980px;
-  }
   .paragraphs {
-    line-height: 58px;
-    font-size: 48px;
-    margin-bottom: 45px;
-    margin-left: 30%;
-    margin-right: -40%;
+    font-size: 27px;
   }
   
   .containers{
-    top:263%;
-    left:53.5%;
-    width:409px;
-    height:95px;
-    border: 7px solid #6e3a4a;
-  }
-  .box{
-    width:300px;
-  }
-  .box span{
-    font-size:58px;
-  }
-  #text-ones{
-  left:50px;
-  top: 20%;
-  }
-  #text-twos{
-    left:-50px;
-    top: 20%;
-  }
-  .links a{
-    padding:30px;
-    font-size:4rem;
-  }
-  .containers:hover .ones{
-    transform:translateX(-300px);
-  }
-  .containers:hover .twos{
-    transform:translateX(300px);
+    top: 83.5%;
+    left:55%;
+    width:209px;
   }
 
-  .service {
-    padding: 130px 0px;
+  .box span{
+    font-size:35px;
   }
-  
+
+  #text-ones{
+    left:41px;
+    }
+  #text-twos{
+     left:-60px;
+    }
+  .links a{
+     padding:20px;
+     font-size:2rem;
+    }
+   
   .title h2 {
-    font-size: 145px;
+    font-size: 85px;
   }
-  
-  .boxy {
-    margin-left: 6.3%;
-  }
-  
-  .card {
-    height: 470px; 
-    width: 600px;
-    border: 7px double #a57584;
-  }
-  
+
   .snip1573 {
-    font-size: 33px;
+    font-size: 40px;
   }
 
   .snip1573 h4 {
-    font-size: 0.7em;
+    font-size: 0.4em;
     margin: -75px;
   }
-  
+
+  .card {
+    height: 390px; 
+    width: 450px;
+    border: 7px double #a57584;
+  }
+ 
   .card .button {
-    font-size: 33px;
-    border: 2px solid transparent;
-    padding: 9px 22px;
-    border-radius: 30px;
+    font-size: 23px;
     margin-right: 2%;
   }
   
   .card .button {
-    border: 5px solid #6e3a4a;
+    border: 2px solid #6e3a4a;
+    cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 5px solid #835467;
-  }
-  
-  footer .footer-below {
-    padding: 45px 0;
-    font-size: 62px;
+    border: 2px solid #835467;
+    cursor: pointer;
+    background-color: #c488a1;
   }
   
   .outer_wrapper {
-    width: 100%;
-    height: 22vh;
+    height: 6vh;
   }
-  
+
   .wrapper {
     height: calc(15vh - 190px);
     width: 100%;
     top: 0;
   }
-  
-  .cat {
-    bottom: -125px;
+
+  footer .footer-below {
+    padding: 45px 0;
+    font-size: 55px;
   }
-  
+
   .myButton {
-    left: 1%;
-    bottom: 3%;
-    height:120px;
-    width: 120px;
-    font-size: 60px;
-    }
+    bottom:1.5%;
+    height:90px;
+    width: 90px;
+    font-size: 48px;
+   }
   
-    .chatOn {
-    right: 1%;
-    bottom: 3%;
-    width: 120px;
+   .chatOn {
+    bottom: 1.5%;
+    width: 90px;
   }
-  
-  .chat-popup {
-    border: 7px solid rgb(108, 60, 84);
-  }
-  
+
   .popup-form {
-    width: 700px;
-    padding: 30px;
+    width: 550px;
     font-size: 35px;
   }
   
   .popup-form input[type=text],
   .popup-form input[type=password] {
-    font-size: 35px;
+    font-size: 25px;
   }
   
   textarea {
-    height: 220px;
-    font-size: 35px;
+    font-size: 25px;
   }
-  
+
   .popup-form .button {
-    font-size: 35px;
+    font-size: 25px;
     border: 7px solid rgb(108, 60, 84);
   }
 }
 
-@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+
+/* change this */
+@media only screen and (min-width: 1441px) and (max-width: 1500px) {
   
   .hero {
     height: 70vh;
@@ -2043,19 +1959,19 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+@media only screen and (min-width: 1300px) and (max-width: 1376px) {
   
   .hero {
-    height: 70vh;
+    height: 100vh;
   }
 
   nav {
-    padding-left: 33%;
-    font-size: 48px;
+    padding-left: 39%;
+    font-size: 38px;
   } 
     
   h1 {
-    top: 30%;
+    top: 45%;
     left: 42%;
     margin-right: -353px;
     font-size: 9rem;
@@ -2076,7 +1992,7 @@ textarea {
   }
 
   .short {
-    margin: 351px 400px 600px 54px;
+    margin: 261px 400px 600px 54px;
     font-size: 39px;
   } 
 
@@ -2089,8 +2005,8 @@ textarea {
   }
   
   .containers{
-    top: 128%;
-    left:55.7%;
+    top: 208%;
+    left:56%;
     width:209px;
   }
 
@@ -2188,10 +2104,10 @@ textarea {
 
 /* DELL */
 
-@media only screen and (min-width: 1260px) and (max-width: 1280px) {
+@media only screen and (min-width: 1200px) and (max-width: 1298px) {
   
   nav {
-    padding-left: 45%;
+    padding-left: 40%;
     font-size: 30px;
   } 
     
@@ -2217,7 +2133,7 @@ textarea {
   }
 
   .short {
-    margin: 200px 400px 600px 65px;
+    margin: 300px 400px 600px 75px;
     font-size: 32px;
   } 
 
@@ -2230,7 +2146,7 @@ textarea {
   }
   
   .containers{
-    top: 230%;
+    top: 203%;
     left:56.5%;
   }
 
@@ -2289,6 +2205,211 @@ textarea {
   
   textarea {
     font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+  nav {
+    font-size: 30px;
+    padding-left: 25%;
+  } 
+  
+  nav ul li {
+    padding: 20px 25px;
+  }
+
+  .btn  {
+    border: 7px solid #835467;
+    border-radius: 14px;
+  }
+  
+  h1 {
+    top: 40%;
+    left: 33%;
+    font-size: 6rem;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-22px);
+  }
+  
+
+  h1:hover span:nth-child(2) {
+    transform: translateY(22px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 103%;
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+  }
+  
+  .short {
+    margin: 230px 480px 600px 45px;
+    font-size: 22px;
+  } 
+  
+  .short a {
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  
+  .about {
+    width: 100%;
+    padding: 110px 0px;
+  }
+
+  .about-text h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    margin-right: -40%;
+  }
+  
+  .about img {
+    display:none;
+  }
+  
+  .about-text {
+    width: 580px;
+  }
+  .paragraphs {
+    line-height: 58px;
+    font-size: 48px;
+    margin-bottom: 45px;
+    margin-left: 1%;
+    margin-right: -10%;
+  }
+  
+  .containers{
+    top:345%;
+    left:43.5%;
+    width:409px;
+    height:95px;
+    border: 7px solid #6e3a4a;
+  }
+  .box{
+    width:300px;
+  }
+  .box span{
+    font-size:58px;
+  }
+  #text-ones{
+  left:50px;
+  top: 20%;
+  }
+  #text-twos{
+    left:-50px;
+    top: 20%;
+  }
+  .links a{
+    padding:30px;
+    font-size:4rem;
+  }
+  .containers:hover .ones{
+    transform:translateX(-300px);
+  }
+  .containers:hover .twos{
+    transform:translateX(300px);
+  }
+
+  .service {
+    padding: 130px 0px;
+  }
+  
+  .title h2 {
+    font-size: 145px;
+  }
+  
+  .card {
+    height: 470px; 
+    width: 600px;
+    border: 7px double #a57584;
+  }
+  
+  .snip1573 {
+    font-size: 33px;
+  }
+
+  .snip1573 h4 {
+    font-size: 0.7em;
+    margin: -75px;
+  }
+  
+  .card .button {
+    font-size: 33px;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    border-radius: 30px;
+    margin-right: 2%;
+  }
+  
+  .card .button {
+    border: 5px solid #6e3a4a;
+    border-radius: 12px;
+  }
+  
+  .card .button:hover {
+    border: 5px solid #835467;
+  }
+  
+  footer .footer-below {
+    padding: 45px 0;
+    font-size: 62px;
+  }
+  
+  .outer_wrapper {
+    width: 100%;
+    height: 22vh;
+  }
+  
+  .wrapper {
+    height: calc(15vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    bottom: -125px;
+  }
+  
+  .myButton {
+    left: 1%;
+    bottom:5.5%;
+    height:80px;
+    width: 80px;
+    font-size: 45px;
+    }
+  
+    .chatOn {
+    right: 1%;
+    bottom: 5.5%;
+    width: 80px;
+  }
+  
+  .chat-popup {
+    border: 7px solid rgb(108, 60, 84);
+  }
+  
+  .popup-form {
+    width: 600px;
+    padding: 30px;
+    font-size: 25px;
+  }
+  
+  .popup-form input[type=text],
+  .popup-form input[type=password] {
+    font-size: 25px;
+  }
+  
+  textarea {
+    height: 150px;
+    font-size: 25px;
+  }
+  
+  .popup-form .button {
+    font-size: 25px;
+    border: 7px solid rgb(108, 60, 84);
   }
 }
 
@@ -2417,7 +2538,6 @@ textarea {
     width: 45px;
     background-color:rgb(108, 60, 84);
   }
-
  } 
 
 @media only screen and (max-width: 768px) {
@@ -2518,7 +2638,6 @@ textarea {
     position: absolute;
     width: 100%;
     height: 12vh;
-    overflow: hidden;
   }
   
   .wrapper {
@@ -2543,7 +2662,8 @@ textarea {
     width: 45px;
     background-color:rgb(108, 60, 84);
   }
- }  
+}
+ 
 
 @media only screen and (max-width: 430px) {
     
@@ -2581,6 +2701,7 @@ textarea {
     margin: 150px 20px 600px 35px;
     font-size: 18px;
   } 
+
   .short a {
     line-height: 18px;
     letter-spacing: 0.3px;
