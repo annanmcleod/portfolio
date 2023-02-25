@@ -2848,7 +2848,7 @@ textarea {
   }
  }  
 
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-width: 399px) {
     
   .hero {
     height: 60vh;
