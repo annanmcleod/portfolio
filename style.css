@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+::-webkit-selection {
+  color: #fff;
+  background: #cf9cc3;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #cf9cc3;
+}
+
+::selection {
+  color: #fff;
+  background: #cf9cc3;
+}
+
 /* NAVBAR STARTS */
 
 .hero {
@@ -17,13 +32,6 @@
 }
 
 nav {
-  /* font-family: 'Alegreya', serif; */
-  /* font-family: 'Arima Madurai', cursive; */
-  /* font-family: 'Cormorant', serif; */
-  /* font-family: 'Cormorant Infant', serif; */
-  /* font-family: 'EB Garamond', serif; */
-  /* font-family: 'El Messiri', sans-serif; */
-  /* font-family: 'Italiana', serif; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,20 +41,30 @@ nav {
   font-size: 28px;
 } 
 
-nav ul li {
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 53%;
+  font-size: 28px;
+} 
+
+.navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 25px;
 }
 
-nav ul li a {
+.navbar ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
   color: #aa6882;
   transition: .4s;
 }
@@ -60,6 +78,169 @@ nav ul li a:hover {
   padding: 5px 15px;
   border-radius: 10px;
 }
+
+
+:root{
+  --primary-color: rgba(86, 62, 81, 0.85);
+  --overlay-color: rgba(86, 62, 81, 0.85);
+  --menu-speed: 0.75s;
+}
+
+.menu-wrap{
+  position:fixed;
+  top: 2%;
+  left: 92%;
+  z-index: 1000;
+  display: none;
+}
+
+.menu-wrap .toggler{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  
+}
+
+.menu-wrap .hamburger{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+}
+
+/* Hamburger line */
+.menu-wrap .hamburger >div {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+/* Top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 4px;
+  background: inherit;
+}
+/* Moves line down */
+.menu-wrap .hamburger > div:after{
+  top: 10px;
+}
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div{
+  transform: rotate(135deg);
+}
+/* Turn Lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div{
+  transform: rotate(225deg);
+}
+/* Show menu */
+.menu-wrap .toggler:checked ~ .menu{
+  visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div{
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+.menu-wrap .toggler:checked ~ .menu > div > div{
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.menu-wrap .menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-wrap .menu > div{
+  background-color: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0); 
+  transition: all 0.4s ease;
+}
+.menu-wrap .menu > div >div{
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: transparent;
+  font-size: 2rem;
+  padding: 1rem;
+  background-size: 200% 100%;
+  background-position: 0;
+  transition: all .7s cubic-bezier(0,0,.23,1);
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg,#f8f5f7,#a67081 50%,#6e4757 0);
+}
+
+.menu-wrap .menu > div > div > ul > li:hover {
+  color: #c76392;
+  background-position: 100%;
+}
+
+.menu-wrap .menu >div > div > ul > li > a{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.link a {
+  margin-top: 5%;
+  font-size: 2.0em;
+  text-decoration: none;
+  justify-items: center;
+  align-items: center;
+  color:#cc9cba;
+}
+
+.link a:hover {
+  color: #c76392;
+}
+
+
 /* NAVBAR ENDS */
 
 
@@ -76,7 +257,7 @@ h1 {
 
   position: absolute;
   top: 45%;
-  left: 35%;
+  left: 34%;
   transform: translate(-50%, -100%);
   margin: 0;
   padding: 0;
@@ -141,7 +322,7 @@ h1:hover span:nth-child(3) {
   /* font-family: 'El Messiri', sans-serif; */
   /* font-family: 'Libre Bodoni', serif; */
   /* font-family: 'Playfair Display', serif; */
-  margin: 300px 680px 600px 85px;
+  margin: 270px 542px 0px 68px;
   font-size: 22px;
   color: white;
   overflow: hidden;
@@ -260,8 +441,8 @@ h1:hover span:nth-child(3) {
 
 .containers{
   position:absolute;
-  top:190%;
-  left:56%;
+  top:193%;
+  left:55.7%;
   transform:translate(-50%,-50%);
   width:209px;
   height:55px;
@@ -897,20 +1078,8 @@ textarea {
 
 /* COMPUTER @MEDIA */
 
-@media only screen and (min-width: 2558px){
-    nav {
-      font-size: 65px;
-    } 
-    
-    nav ul li {
-      padding: 30px 25px;
-    }
-  
-    .btn  {
-      border: 7px solid #835467;
-      border-radius: 14px;
-    }
-    
+ @media only screen and (min-width: 2558px){
+
     h1 {
       top: 45%;
       left: 35%;
@@ -1104,19 +1273,18 @@ textarea {
 }
 
 @media only screen and (width: 2553px){
-  nav {
-    font-size: 45px;
-  } 
-  
-  nav ul li {
-    padding: 30px 55px;
-  }
 
-  .btn  {
-    border: 7px solid #835467;
-    border-radius: 14px;
-  }
-  
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 53%;
+    font-size: 58px;
+  } 
+
   h1 {
     top: 50%;
     left: 31%;
@@ -1178,7 +1346,7 @@ textarea {
   }
   
   .containers{
-    top:263%;
+    top:262%;
     left:53.5%;
     width:409px;
     height:95px;
@@ -1315,11 +1483,6 @@ textarea {
     height: 50vh;
   }
 
-  nav {
-    padding-left: 33%;
-    font-size: 54px;
-  } 
-    
   h1 {
     top: 22%;
     left: 40%;
@@ -1464,11 +1627,6 @@ textarea {
     height: 50vh;
   }
 
-  nav {
-    padding-left: 33%;
-    font-size: 54px;
-  } 
-    
   h1 {
     top: 22%;
     left: 40%;
@@ -1607,19 +1765,12 @@ textarea {
   }
 }
 
-
-/* change this */
 @media only screen and (min-width: 1441px) and (max-width: 1500px) {
   
   .hero {
     height: 70vh;
   }
 
-  nav {
-    padding-left: 33%;
-    font-size: 48px;
-  } 
-    
   h1 {
     top: 30%;
     left: 42%;
@@ -1642,7 +1793,7 @@ textarea {
   }
 
   .short {
-    margin: 351px 400px 600px 88px;
+    margin: 270px 400px 600px 88px;
     font-size: 39px;
   } 
 
@@ -1655,7 +1806,7 @@ textarea {
   }
   
   .containers{
-    top: 132%;
+    top: 144%;
     left:55.7%;
     width:209px;
   }
@@ -1756,13 +1907,7 @@ textarea {
   .hero {
     height: 100vh;
   }
-  nav {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-left: 45%;
-    font-size: 55px;
-  } 
-  
+
   h1 {
     position: absolute;
     top: 45%;
@@ -1961,160 +2106,31 @@ textarea {
 
 @media only screen and (min-width: 1300px) and (max-width: 1376px) {
   
-  .hero {
-    height: 100vh;
-  }
 
-  nav {
-    padding-left: 39%;
-    font-size: 38px;
+  .navbar {
+    padding-left: 50%;
   } 
-    
-  h1 {
-    top: 45%;
-    left: 42%;
-    margin-right: -353px;
-    font-size: 9rem;
-  }
-
-  h1:hover span:nth-child(1) {
-    transform: translateY(-22px);
-  }
-  
-  h1:hover span:nth-child(2) {
-    transform: translateY(22px);
-  }
-  
-  h1 span:nth-child(3) {
-    width: 102%;
-    font-size: 1.6rem;
-    letter-spacing: 0.6rem;
-  }
 
   .short {
-    margin: 261px 400px 600px 54px;
-    font-size: 39px;
-  } 
-
-  .about-text h2 {
-    font-size: 90px;
-  }
-  
-  .paragraphs {
-    font-size: 27px;
-  }
-  
-  .containers{
-    top: 208%;
-    left:56%;
-    width:209px;
+    margin: 265px 542px 0px 49px;
+    font-size: 22px;
   }
 
-  .box span{
-    font-size:35px;
-  }
-
-  #text-ones{
-    left:41px;
-    }
-  #text-twos{
-     left:-60px;
-    }
-  .links a{
-     padding:20px;
-     font-size:2rem;
-    }
-   
-  .title h2 {
-    font-size: 85px;
-  }
-
-  .snip1573 {
-    font-size: 40px;
-  }
-
-  .snip1573 h4 {
-    font-size: 0.4em;
-    margin: -75px;
-  }
-
-  .card {
-    height: 390px; 
-    width: 450px;
-    border: 7px double #a57584;
-  }
- 
-  .card .button {
-    font-size: 23px;
-    margin-right: 2%;
-  }
-  
-  .card .button {
-    border: 2px solid #6e3a4a;
-    cursor: pointer;
-    border-radius: 12px;
-  }
-  
-  .card .button:hover {
-    border: 2px solid #835467;
-    cursor: pointer;
-    background-color: #c488a1;
-  }
-  
-  .outer_wrapper {
-    height: 8vh;
-  }
-
-  footer .footer-below {
-    padding: 45px 0;
-    font-size: 55px;
-  }
-
-  .myButton {
-    bottom:3%;
-    height:90px;
-    width: 90px;
-    font-size: 48px;
-   }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 90px;
-  }
-
-  .popup-form {
-    width: 550px;
-    font-size: 35px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 25px;
-  }
-  
-  textarea {
-    font-size: 25px;
-  }
-
-  .popup-form .button {
-    font-size: 25px;
-    border: 7px solid rgb(108, 60, 84);
-  }
 }
 
 /* DELL */
 
 @media only screen and (min-width: 1200px) and (max-width: 1298px) {
   
-  nav {
-    padding-left: 40%;
-    font-size: 30px;
+
+  .navbar {
+    padding-left: 46%;
   } 
     
   h1 {
     top: 45%;
     left: 38%;
-    margin-right: -140px;
+    margin-right: -363px;
     font-size: 7rem;
   }
 
@@ -2128,106 +2144,35 @@ textarea {
   
   h1 span:nth-child(3) {
     width: 102%;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 0.6rem;
   }
 
   .short {
-    margin: 247px 400px 600px 55px;
-    font-size: 32px;
+    margin: 265px 542px 0px 72px;
+    font-size: 22px;
   } 
-
-  .about-text h2 {
-    font-size: 85px;
-  }
-  
-  .paragraphs {
-    font-size: 23px;
-  }
   
   .containers{
-    top: 227%;
-    left:56.5%;
+    top: 193%;
+    left:56.3%;
   }
 
-  .title h2 {
-    font-size: 85px;
-  }
-
-  .card {
-    height: 300px; 
-    width: 350px;
-    border: 7px double #a57584;
-  }
- 
-  .card .button {
-    font-size: 13px;
-    margin-right: 2%;
-  }
-  
-  .card .button {
-    border: 2px solid #6e3a4a;
-    cursor: pointer;
-    border-radius: 12px;
-  }
-  
-  .card .button:hover {
-    border: 2px solid #835467;
-    cursor: pointer;
-    background-color: #c488a1;
-  }
-  
-  .outer_wrapper {
-    height: 10vh;
-  }
-
-  .myButton {
-    bottom:3.5%;
-    height:60px;
-    width: 60px;
-    font-size: 24px;
-   }
-  
-   .chatOn {
-    bottom: 3.5%;
-    width: 60px;
-  }
-
-  .popup-form {
-    width: 350px;
-    font-size: 20px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 15px;
-  }
-  
-  textarea {
-    font-size: 15px;
-  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1199px){
-  nav {
-    font-size: 30px;
-    padding-left: 25%;
+
+  .navbar {
+    padding-left: 35%;
   } 
-  
-  nav ul li {
-    padding: 20px 25px;
+
+  h1 {
+    top: 45%;
+    left: 45%;
+    right: -30%;
+    font-size: 7rem;
   }
 
-  .btn  {
-    border: 7px solid #835467;
-    border-radius: 14px;
-  }
-  
-  h1 {
-    top: 40%;
-    left: 33%;
-    font-size: 6rem;
-  }
   
   h1:hover span:nth-child(1) {
     transform: translateY(-22px);
@@ -2239,196 +2184,155 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 103%;
-    font-size: 3rem;
+    width: 91%;
+    font-size: 1.2rem;
     letter-spacing: 0.6rem;
   }
   
   .short {
-    margin: 230px 480px 600px 45px;
+    margin: 268px 325px 0px 38px;
     font-size: 22px;
   } 
   
-  .short a {
-    line-height: 28px;
-    letter-spacing: 1px;
+  .containers{
+    top: 193%;
+    left:55%;
   }
-  
-  .about {
-    width: 100%;
-    padding: 110px 0px;
+}
+
+/* MOBILE @MEDIA */
+
+
+@media only screen and (max-width: 998px) {
+  .hero {
+    height: 60vh;
   }
 
-  .about-text h2 {
-    font-size: 80px;
-    margin-bottom: 20px;
-    margin-left: 1%;
-    margin-right: -40%;
+  .navbar {
+    display: none;
+  }
+
+  .menu-wrap{
+    display: flex;
   }
   
+  h1 {
+    top: 30%;
+    left: 45%;
+    right: -30%;
+    font-size: 5rem;
+  }
+
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 74%;
+    font-size: 1.0rem;
+    letter-spacing: 0.4rem;
+  }
+ 
+  .short {
+    margin: 235px 300px 500px 31px;
+    font-size: 18px;
+  }
+
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+
   .about img {
-    display:none;
+    display: none;
   }
   
-  .about-text {
-    width: 580px;
+  .about-text h2 {
+    font-size: 47px;
   }
+  
   .paragraphs {
-    line-height: 58px;
-    font-size: 48px;
-    margin-bottom: 45px;
-    margin-left: 1%;
-    margin-right: -10%;
+    letter-spacing: 0.2px;
+    font-size: 17px;
   }
   
   .containers{
-    top:345%;
-    left:43.5%;
-    width:409px;
-    height:95px;
-    border: 7px solid #6e3a4a;
-  }
-  .box{
-    width:300px;
-  }
-  .box span{
-    font-size:58px;
-  }
-  #text-ones{
-  left:50px;
-  top: 20%;
-  }
-  #text-twos{
-    left:-50px;
-    top: 20%;
-  }
-  .links a{
-    padding:30px;
-    font-size:4rem;
-  }
-  .containers:hover .ones{
-    transform:translateX(-300px);
-  }
-  .containers:hover .twos{
-    transform:translateX(300px);
+    display: none;
   }
 
-  .service {
-    padding: 130px 0px;
-  }
-  
   .title h2 {
-    font-size: 145px;
-  }
-  
-  .card {
-    height: 470px; 
-    width: 600px;
-    border: 7px double #a57584;
-  }
-  
-  .snip1573 {
-    font-size: 33px;
+    font-size: 47px;
+    width: 330px;
   }
 
-  .snip1573 h4 {
-    font-size: 0.7em;
-    margin: -75px;
-  }
-  
-  .card .button {
-    font-size: 33px;
-    border: 2px solid transparent;
-    padding: 9px 22px;
-    border-radius: 30px;
-    margin-right: 2%;
-  }
-  
-  .card .button {
-    border: 5px solid #6e3a4a;
-    border-radius: 12px;
-  }
-  
-  .card .button:hover {
-    border: 5px solid #835467;
+  .boxy {
+    margin-left: 6%;
   }
   
   footer .footer-below {
-    padding: 45px 0;
-    font-size: 62px;
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 25px;
+    background-color: #896d7e;
+    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
+    position: absolute;
     width: 100%;
-    height: 22vh;
+    height: 12vh;
+    overflow: hidden;
   }
   
   .wrapper {
-    height: calc(15vh - 190px);
+    position: absolute;
+    height: calc(42vh - 190px);
     width: 100%;
     top: 0;
   }
   
   .cat {
-    bottom: -125px;
+    display:none;
   }
   
   .myButton {
-    left: 1%;
-    bottom:5.5%;
-    height:80px;
-    width: 80px;
-    font-size: 45px;
-    }
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
   
-    .chatOn {
-    right: 1%;
-    bottom: 5.5%;
-    width: 80px;
-  }
-  
-  .chat-popup {
-    border: 7px solid rgb(108, 60, 84);
-  }
-  
-  .popup-form {
-    width: 600px;
-    padding: 30px;
-    font-size: 25px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 25px;
-  }
-  
-  textarea {
-    height: 150px;
-    font-size: 25px;
-  }
-  
-  .popup-form .button {
-    font-size: 25px;
-    border: 7px solid rgb(108, 60, 84);
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
   }
 }
-
-/* MOBILE @MEDIA */
 
  @media only screen and (max-width: 891px) {
     
   .hero {
     height: 60vh;
   }
-  
-  nav ul{
+
+  .navbar {
     display: none;
-  } 
-  
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 90%;
+  }
+
   h1 {
-    top: 20%;
-    left: 50%;
-    margin-right: -400px;
+    top: 30%;
+    left: 45%;
+    right: -30%;
     font-size: 5rem;
   }
   
@@ -2441,15 +2345,16 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 101%;
+    width: 81%;
     font-size: 1.2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
   }
  
   .short {
-    margin: 150px 20px 600px 35px;
+    margin: 235px 300px 500px 31px;
     font-size: 18px;
-  } 
+  }
+
   .short a {
     line-height: 18px;
     letter-spacing: 0.3px;
@@ -2459,36 +2364,17 @@ textarea {
     display: none;
   }
   
-  .about-text {
-    width: 350px;
-  }
-  
   .about-text h2 {
     font-size: 47px;
   }
   
   .paragraphs {
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 17px;
   }
   
   .containers{
-    top:155%;
-    left:40%;
-    width:180px;
-    height:45px;
-  }
-
-  .box span{
-    font-size:20px;
-  }
-  #text-ones{
-  left:32px;
-  top: -17%;
-  }
-  #text-twos{
-    left:-40px;
-    top: -17%;
+    display: none;
   }
 
   .title h2 {
@@ -2540,20 +2426,26 @@ textarea {
   }
  } 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 798px) {
     
   .hero {
     height: 60vh;
   }
-  
-  nav ul{
+
+  .navbar {
     display: none;
-  } 
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 88%;
+  }
   
   h1 {
-    top: 20%;
-    left: 50%;
-    margin-right: -400px;
+    top: 30%;
+    left: 45%;
+    right: -33%;
     font-size: 5rem;
   }
   
@@ -2566,15 +2458,240 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 101%;
+    width: 90%;
     font-size: 1.2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
   }
  
   .short {
-    margin: 150px 20px 600px 35px;
+    margin: 235px 150px 500px 18px;
     font-size: 18px;
-  } 
+  }
+
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  
+  .about img {
+    display: none;
+  }
+  
+  .about-text h2 {
+    font-size: 47px;
+  }
+  
+  .paragraphs {
+    letter-spacing: 0.2px;
+    font-size: 17px;
+  }
+  
+  .containers{
+    display: none;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    width: 330px;
+  }
+
+  .parent {
+    margin-left: -4.5%;
+  }
+  
+  footer .footer-below {
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 25px;
+    background-color: #896d7e;
+    font-family: 'El Messiri', sans-serif;
+  }
+  
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(42vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    display:none;
+  }
+  
+  .myButton {
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
+  
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
+  }
+}
+
+@media only screen and (max-width: 696px) {
+    
+  .hero {
+    height: 60vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 88%;
+  }
+  
+  h1 {
+    top: 30%;
+    left: 52%;
+    right: -48%;
+    font-size: 4.7rem;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 96%;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+ 
+  .short {
+    margin: 235px 79px 500px 31px;
+    font-size: 18px;
+  }
+
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  
+  .about img {
+    display: none;
+  }
+  
+  .about-text h2 {
+    font-size: 47px;
+  }
+  
+  .paragraphs {
+    letter-spacing: 0.2px;
+    font-size: 17px;
+  }
+  
+  .containers{
+    display: none;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    width: 330px;
+  }
+
+  .parent {
+    margin-left: -4.5%;
+  }
+  
+  footer .footer-below {
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 25px;
+    background-color: #896d7e;
+    font-family: 'El Messiri', sans-serif;
+  }
+  
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(42vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    display:none;
+  }
+  
+  .myButton {
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
+  
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
+  }
+}
+
+@media only screen and (max-width: 598px) {
+    
+  .hero {
+    height: 60vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 88%;
+  }
+  
+  h1 {
+    top: 30%;
+    left: 49%;
+    right: -34%;
+    font-size: 4rem;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 101%;
+    font-size: 1.0rem;
+    letter-spacing: 0.2rem;
+  }
+ 
+  .short {
+    margin: 232px 67px 500px 54px;
+    font-size: 18px;
+  }
+
   .short a {
     line-height: 18px;
     letter-spacing: 0.3px;
@@ -2598,22 +2715,7 @@ textarea {
   }
   
   .containers{
-    top:155%;
-    left:38.7%;
-    width:180px;
-    height:45px;
-  }
-
-  .box span{
-    font-size:20px;
-  }
-  #text-ones{
-  left:32px;
-  top: -17%;
-  }
-  #text-twos{
-    left:-40px;
-    top: -17%;
+    display: none;
   }
 
   .title h2 {
@@ -2670,15 +2772,31 @@ textarea {
   .hero {
     height: 60vh;
   }
-  
-  nav ul{
+
+  .navbar {
     display: none;
-  } 
-  
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 82%;
+  }
+
+  .menu-wrap .hamburger{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+  }
+
+  .menu-wrap .menu > div{
+    border-radius: 40%;
+  }
+ 
   h1 {
     top: 20%;
     left: 50%;
-    margin-right: -200px;
+    margin-right: -18px;
     font-size: 3rem;
   }
   
@@ -2722,25 +2840,6 @@ textarea {
   .paragraphs {
     letter-spacing: 0.2px;
     font-size: 16px;
-  }
-  
-  .containers{
-    top:155%;
-    left:29%;
-    width:180px;
-    height:45px;
-  }
-
-  .box span{
-    font-size:20px;
-  }
-  #text-ones{
-  left:32px;
-  top: -17%;
-  }
-  #text-twos{
-    left:-40px;
-    top: -17%;
   }
 
   .title h2 {
@@ -2786,7 +2885,6 @@ textarea {
     width: 45px;
     background-color:rgb(108, 60, 84);
   }
-
  }  
 
  /* @MEDIA ENDS */
