@@ -39,15 +39,19 @@ nav {
   padding-bottom: 10px;
   padding-left: 53%;
   font-size: 28px;
+  font-family: 'Alice', serif;
 } 
 
+/* full screen nav */
+
 .navbar {
+  font-family: 'Alice', serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 53%;
+  padding-left: 50%;
   font-size: 28px;
 } 
 
@@ -79,10 +83,14 @@ nav {
   border-radius: 10px;
 }
 
+/*  end full screen nav */
+
+
+/* toggler nav */
 
 :root{
-  --primary-color: rgba(86, 62, 81, 0.85);
-  --overlay-color: rgba(86, 62, 81, 0.85);
+  --primary-color: #835467;
+  --overlay-color: rgba(76, 52, 64, 0.85);
   --menu-speed: 0.75s;
 }
 
@@ -125,12 +133,13 @@ nav {
 .menu-wrap .hamburger >div {
   position: relative;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
+  border-radius: 10%;
 }
 /* Top and bottom lines */
 .menu-wrap .hamburger > div:before,
@@ -140,8 +149,9 @@ nav {
   z-index: 1;
   top: -10px;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: inherit;
+  border-radius: 10%;
 }
 /* Moves line down */
 .menu-wrap .hamburger > div:after{
@@ -240,6 +250,8 @@ nav {
   color: #c76392;
 }
 
+/* end toggler nav */
+
 
 /* NAVBAR ENDS */
 
@@ -247,14 +259,7 @@ nav {
 /* HOMEPAGE STARTS */
 
 h1 {
-  /* font-family: 'Alice', serif; */
-
-  /* font-family: 'EB Garamond', serif; */
-
-  /* font-family: 'Libre Bodoni', serif; */
-
-  /* font-family: 'Playfair Display', serif; */
-
+  font-family: 'Playfair Display', serif;
   position: absolute;
   top: 45%;
   left: 34%;
@@ -309,20 +314,15 @@ h1 span:nth-child(3) {
   transition: 0.5s;
   color: #49273c;
 }
+
 h1:hover span:nth-child(3) {
-    transform: translateY(-50%) scaleY(1);
-    color: #643247;
+  transform: translateY(-50%) scaleY(1);
+  color: #643247;
 }
 
 .short {
-  /* font-family: 'Alegreya', serif; */
-  /* font-family: 'Alice', serif; */
-  /* font-family: 'Arima Madurai', cursive; */
-  /* font-family: 'EB Garamond', serif; */
-  /* font-family: 'El Messiri', sans-serif; */
-  /* font-family: 'Libre Bodoni', serif; */
-  /* font-family: 'Playfair Display', serif; */
-  margin: 270px 542px 0px 68px;
+  font-family: 'Alice', serif;
+  margin: 253px 590px 0px 90px;
   font-size: 22px;
   color: white;
   overflow: hidden;
@@ -330,24 +330,6 @@ h1:hover span:nth-child(3) {
 } 
 
 .short a {
-  /* font-family: 'Advent Pro', sans-serif; */
-  /* font-family: 'Alegreya', serif; */
-  /* font-family: 'Alice', serif; */
-  /* font-family: 'Arima Madurai', cursive; */
-  /* font-family: 'Bodoni Moda', serif; */
-  /* font-family: 'Cormorant', serif; */
-  /* font-family: 'Cormorant Infant', serif; */
-  /* font-family: 'Dorsa', sans-serif; */
-  /* font-family: 'EB Garamond', serif; */
-  /* font-family: 'El Messiri', sans-serif; */
-  /* font-family: 'Italiana', serif; */
-  /* font-family: 'Libre Bodoni', serif; */
-  /* font-family: 'Megrim', cursive; */
-  /* font-family: 'Playfair Display', serif; */
-  /* font-family: 'Poiret One', cursive; */
-  /* font-family: 'Six Caps', sans-serif; */
-  /* font-family: 'Titillium Web', sans-serif; */
-  /* font-family: 'Varela', sans-serif; */
   text-decoration: none;
   color: rgb(162, 95, 129);
   line-height: 28px;
@@ -392,51 +374,12 @@ h1:hover span:nth-child(3) {
 }
 
 .paragraphs {
-  /* font-family: 'Advent Pro', sans-serif; */
-
-  /* font-family: 'Alegreya', serif; */
-
-  /* font-family: 'Alice', serif; */
-
-  /* font-family: 'El Messiri', sans-serif; */
-
-  /* font-family: 'Italiana', serif; */
-
-  /* font-family: 'Libre Bodoni', serif; */
-
-  /* font-family: 'Playfair Display', serif; */
-
+  font-family: 'Alice', serif;
   color: white;
   letter-spacing: 2px;
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
-}
-
-.paragraphs a{
-  /* font-family: 'Advent Pro', sans-serif; */
-  /* font-family: 'Alegreya', serif; */
-  /* font-family: 'Alice', serif; */
-  /* font-family: 'Arima Madurai', cursive; */
-  /* font-family: 'Bodoni Moda', serif; */
-  /* font-family: 'Cormorant', serif; */
-  /* font-family: 'Cormorant Infant', serif; */
-  /* font-family: 'Dorsa', sans-serif; */
-  /* font-family: 'EB Garamond', serif; */
-  /* font-family: 'El Messiri', sans-serif; */
-  /* font-family: 'Italiana', serif; */
-  /* font-family: 'Libre Bodoni', serif; */
-  /* font-family: 'Megrim', cursive; */
-  /* font-family: 'Playfair Display', serif; */
-  /* font-family: 'Poiret One', cursive; */
-  /* font-family: 'Six Caps', sans-serif; */
-  /* font-family: 'Titillium Web', sans-serif; */
-  /* font-family: 'Varela', sans-serif; */
-  color:rgb(162, 95, 129);
-  letter-spacing: 2px;
-  line-height: 28px;
-  font-size: 18px;
-  text-decoration: none;
 }
 
 .containers{
@@ -451,6 +394,7 @@ h1:hover span:nth-child(3) {
   overflow:hidden;
   border-radius:7px;
   border: 4px solid #6e3a4a;
+  font-family: 'Alice', serif;
 }
 .box{
   position:absolute;
@@ -617,17 +561,7 @@ top: -10%;
   opacity: 0;
   -webkit-box-shadow: 0 0 10px #000000;
   box-shadow: 0 0 10px #000000;
-  /* font-family: 'Alice', serif; */
-
-  /* font-family: 'Bodoni Moda', serif; */
-
-  /* font-family: 'Cormorant Infant', serif; */
-
-  /* font-family: 'El Messiri', sans-serif; */
-
-  /* font-family: 'Italiana', serif; */
-
-  /* font-family: 'Poiret One', cursive; */
+  font-family: 'Alice', serif;
 }
 
 .snip1573 h4 {
@@ -638,7 +572,6 @@ top: -10%;
   font-weight: 600;
   letter-spacing: 1px;
   margin: -25px;
-
   padding: 5px 5px 5px 5px;
   text-transform: uppercase;
 }
@@ -681,17 +614,12 @@ top: -10%;
   color: white;
   text-decoration: none;
   font-size: 13px;
-  /* border: 2px solid transparent; */
   font-weight: bold;
-  padding: 9px 22px;
+  padding: 9px 14px;
   border-radius: 30px;
   transition: .4s;
-  margin-right: 2%;
-  /* font-family: 'Advent Pro', sans-serif; */
-
-  /* font-family: 'Poiret One', cursive; */
-
-  /* font-family: 'Titillium Web', sans-serif; */
+  margin-right: 1%;
+  font-family: 'Alice', serif;
 }
 
 .card .button {
@@ -716,7 +644,7 @@ footer .footer-below {
   color: white;
   font-size: 28px;
   background-color: #896d7e;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .outer_wrapper {
@@ -777,7 +705,7 @@ footer .footer-below {
   right: -10px;
   top: -30px;
   transition: 0.5s;
-  z-index: 50;
+  z-index: 30;
 }
 
 .first_pose .cat_head,
@@ -990,6 +918,7 @@ path {
   width: 50px;
   cursor: pointer;
   font-size: 24px;
+  z-index: 30;
  }
 
  .chatOn {
@@ -1004,7 +933,7 @@ path {
   transition: .5s;
   width: 50px;
   border-radius: 10px;
-  background-color: rgb(177, 93, 135);
+  background-color: rgb(108, 60, 84);
 }
 
 /* The popup form - hidden by default */
@@ -1024,6 +953,7 @@ path {
   padding: 10px;
   background-color: rgb(21, 15, 15);
   color: white;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Full-width input fields */
@@ -1056,7 +986,7 @@ textarea {
 .popup-form .button {
   background-color: rgb(37, 26, 32);
   color: white;
-  padding: 16px 20px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   width: 49%;
@@ -1065,6 +995,7 @@ textarea {
   font-size: 15px;
   border-radius: 10px;
   border: 4px solid rgb(108, 60, 84);
+  font-family: 'Playfair Display', serif;
 }
 
 .popup-form .chatOff {
@@ -1621,6 +1552,44 @@ textarea {
   }
 }
 
+@media only screen and (width: 1920px) and (height: 1080px) {
+
+  .navbar {
+    padding-left: 60%;
+    font-size: 35px;
+  }
+
+  h1 {
+    top: 25%;
+    left: 33%;
+    margin-right: -353px;
+  }
+
+  .short {
+    margin: 168px 695px 600px 99px;
+    font-size: 39px;
+  } 
+
+  .containers{
+    top: 132%;
+    left: 54.2%;
+    width:209px;
+  }
+
+
+  .myButton {
+    bottom: 4%;
+    height: 90px;
+    width: 90px;
+    font-size: 48px;
+   }
+  
+   .chatOn {
+    bottom: 4%;
+    width: 90px;
+  }
+}
+
 @media only screen and (min-width: 1501px) and (max-width: 1601px) {
   
   .hero {
@@ -2106,16 +2075,14 @@ textarea {
 
 @media only screen and (min-width: 1300px) and (max-width: 1376px) {
   
-
   .navbar {
-    padding-left: 50%;
+    padding-left: 47%;
   } 
 
   .short {
-    margin: 265px 542px 0px 49px;
+    margin: 253px 542px 0px 67px;
     font-size: 22px;
   }
-
 }
 
 /* DELL */
@@ -2124,7 +2091,7 @@ textarea {
   
 
   .navbar {
-    padding-left: 46%;
+    padding-left: 43%;
   } 
     
   h1 {
@@ -2149,21 +2116,22 @@ textarea {
   }
 
   .short {
-    margin: 265px 542px 0px 72px;
+    margin: 265px 542px 0px 92px;
+    /* margin: 188px 400px 0px 67px; */
     font-size: 22px;
   } 
   
   .containers{
     top: 193%;
+    /* top: 220%; */
     left:56.3%;
   }
-
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1199px){
 
   .navbar {
-    padding-left: 35%;
+    padding-left: 32%;
   } 
 
   h1 {
@@ -2203,7 +2171,7 @@ textarea {
 /* MOBILE @MEDIA */
 
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 999px) {
   .hero {
     height: 60vh;
   }
@@ -2238,7 +2206,7 @@ textarea {
   }
  
   .short {
-    margin: 235px 300px 500px 31px;
+    margin: 220px 380px 500px 29px;
     font-size: 18px;
   }
 
@@ -2279,7 +2247,6 @@ textarea {
     color: white;
     font-size: 25px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
@@ -2392,7 +2359,6 @@ textarea {
     color: white;
     font-size: 25px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
@@ -2424,7 +2390,7 @@ textarea {
     width: 45px;
     background-color:rgb(108, 60, 84);
   }
- } 
+} 
 
 @media only screen and (max-width: 798px) {
     
@@ -2505,7 +2471,6 @@ textarea {
     color: white;
     font-size: 25px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
@@ -2617,7 +2582,6 @@ textarea {
     color: white;
     font-size: 25px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
@@ -2650,7 +2614,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 598px) {
+@media only screen and (max-width: 599px) {
     
   .hero {
     height: 60vh;
@@ -2668,8 +2632,8 @@ textarea {
   
   h1 {
     top: 30%;
-    left: 49%;
-    right: -34%;
+    left: 50%;
+    right: -32%;
     font-size: 4rem;
   }
   
@@ -2733,7 +2697,6 @@ textarea {
     color: white;
     font-size: 25px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
   .outer_wrapper {
@@ -2766,8 +2729,7 @@ textarea {
   }
 }
  
-
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 499px) {
     
   .hero {
     height: 60vh;
@@ -2853,9 +2815,127 @@ textarea {
     color: white;
     font-size: 18px;
     background-color: #896d7e;
-    font-family: 'El Messiri', sans-serif;
   }
   
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(42vh - 190px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .cat {
+    display:none;
+  }
+  
+  .myButton {
+    bottom:3%;
+    height:45px;
+    width: 45px;
+   }
+  
+   .chatOn {
+    bottom: 3%;
+    width: 45px;
+    background-color:rgb(108, 60, 84);
+  }
+ }  
+
+ @media only screen and (max-width: 375px) {
+    
+  .hero {
+    height: 60vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-wrap{
+    display: flex; 
+    top: 2%;
+    left: 82%;
+  }
+
+  .menu-wrap .hamburger{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+  }
+
+  .menu-wrap .menu > div{
+    border-radius: 40%;
+  }
+ 
+  h1 {
+    top: 20%;
+    left: 50%;
+    margin-right: -50px;
+    font-size: 3rem;
+  }
+  
+  
+  h1:hover span:nth-child(1) {
+    transform: translateY(-12px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(12px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 101%;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+ 
+  .short {
+    margin: 120px 20px 600px 15px;
+    font-size: 18px;
+  } 
+
+  .short a {
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  
+  .about img {
+    display: none;
+  }
+  
+  .about-text {
+    width: 350px;
+  }
+  
+  .about-text h2 {
+    font-size: 47px;
+  }
+  
+  .paragraphs {
+    letter-spacing: 0.2px;
+    font-size: 16px;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    width: 330px;
+  }
+  
+  footer .footer-below {
+    text-align: center;
+    padding: 31px 0;
+    color: white;
+    font-size: 18px;
+    background-color: #896d7e;
+  }
+
   .outer_wrapper {
     position: absolute;
     width: 100%;
