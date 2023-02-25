@@ -8,26 +8,47 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="images/logo.png"/>
     <script type = "text/javascript" src = "script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/dceaf17e09.css" crossorigin="anonymous">
   </head>
 
 <body>
   <header>
   <div class = "hero">
     <nav>
-      <div>
-        <ul>
-          <li><a href = "#">Home</a></li>
-          <li><a href = "#about-section">About Me</a></li>
-          <li><a href = "#projects-section">Projects</a></li>
-          <li><a href = "https://www.canva.com/design/DAFQ51UoZes/FGK8vjV3CgztvgeCFraZ2Q/view?utm_content=DAFQ51UoZes&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class = "btn">Resume</a></li>
-        </ul>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+          <div>
+              <div>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#about-section">About Me</a></li>
+                      <li><a href="#projects-section">Projects</a></li>
+                  </ul>
+                  <div class = "link">
+                    <a href="https://dribbble.com/annamcle0d"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/anna-mcleod-95b210242/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/annanmcleod"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.canva.com/design/DAFQ51UoZes/FGK8vjV3CgztvgeCFraZ2Q/view?utm_content=DAFQ51UoZes&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><i class="far fa-file-alt"></i></a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+    <div class = "navbar">
+      <ul>
+        <li><a href = "#">Home</a></li>
+        <li><a href = "#about-section">About Me</a></li>
+        <li><a href = "#projects-section">Projects</a></li>
+        <li><a href = "https://www.canva.com/design/DAFQ51UoZes/FGK8vjV3CgztvgeCFraZ2Q/view?utm_content=DAFQ51UoZes&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class = "btn">Resume</a></li>
+      </ul>
+    </div>
 
     <section>
-
-      <div class = "content">
+      <div>
         <h1>Anna McLeod
           <span>Anna McLeod</span>
           <span>Anna McLeod</span>
@@ -35,14 +56,12 @@
         </h1>
       </div>
       <div>
-      <p class = "short">
-        Hi! I'm a current student attending <a href="https://basecampcodingacademy.org/">Base Camp Coding Academy</a> in Water Valley, Mississippi. I currently reside in New Albany, Mississippi and have been commuting back and forth.
-        I'm an upcoming software developer who is passionate about bringing new ideas to the table.
-      </p>
-    </div>
-
+        <p class = "short">
+          Hi! I'm a current student attending <a href="https://basecampcodingacademy.org/">Base Camp Coding Academy</a> in Water Valley, Mississippi. I currently reside in New Albany, Mississippi and have been commuting back and forth.
+          I'm an upcoming software developer who is passionate about bringing new ideas to the table.
+        </p>
+      </div>
     </section>
-
   </div>
   </header>
 
@@ -54,7 +73,7 @@
       <img src = "images/me.png">
       <div class = "about-text">
         <h2>About Me</h2>
-        <p class = "paragraphs">From a young age I have always been passionate about art design and graphics. I got interested in software development and web design in 2021 in a digital media class. I began with Adobe Illustrator in class and studied on the side with Codecademy.<br><br>Towards the end of the class I realized that creating anything with little to no limit made me want to pursue software development. My unending ideas of what I can develop I hope can speak to others.<br><br>From my time at BCCA I will have learned multiple different skills such as:<br><br>| Python | Git | HTML | CSS | Django | Javascript | Java | Bootstrap | Spring | PSQL | SQL | Adobe Illustrator |</p>
+        <p class = "paragraphs">From a young age I have always been passionate about art design and graphics. I got interested in software development and web design in 2021 in a digital media class. I began with Adobe Illustrator in class and studied on the side with Codecademy.<br><br>Towards the end of the class I realized that creating anything with little to no limit made me want to pursue software development. My unending ideas of what I can develop I hope can speak to others.<br><br>From my time at BCCA I will have learned multiple different skills such as:<br><br>| Python | Git | HTML | CSS | Django | Javascript | Java | Bootstrap | Spring | PSQL | SQL | Adobe Illustrator | MetaHuman Creator |</p>
         <div class="containers">
           <div class="box ones"><span id="text-ones">Connect</span></div>
             <div class="box twos"><span id="text-twos">Connect</span></div>
@@ -77,6 +96,22 @@
       <h2>Projects</h2>
     </div>
     <div class = "parent">
+
+      <div class = "boxy">
+        <div class = "card">
+          <figure class="snip1573"><img src = "images/loading16.png" alt = "MD Software"/>
+            <div class = "pra">
+              <figcaption>
+                <h4><u>MD Software<br></u><br>This is a SQL and Java unit project where we have created a motion detector camera.</h4>
+              </figcaption>
+            </div>
+          </figure>
+          <p style = "text-align: center;">
+            <a class = "button" href = "https://github.com/annanmcleod/motion-detection">Source Code</a>
+          </p>
+        </div>
+      </div>
+
       <div class = "boxy">
         <div class = "card">
           <figure class="snip1573"><img src = "images/retention4.png" alt = "Retention"/>
@@ -87,7 +122,8 @@
             </div>
           </figure>
           <p style = "text-align: center;">
-            <a class = "button" href = "">View Project</a>
+            <a class = "button" href = " ">View Project</a>
+            <a class = "button" href = "https://github.com/annanmcleod/Memory-Game">Source Code</a>
           </p>
         </div>
       </div>
@@ -103,7 +139,8 @@
             </div>
           </figure>
           <p style = "text-align: center;">
-            <a class = "button" href = "https://github.com/annanmcleod/fictional_char">Source Code</a>
+            <a class = "button" href = " ">View Project</a>
+            <a class = "button" href = " ">Source Code</a>
           </p>
         </div>
       </div>
@@ -118,6 +155,7 @@
             </div>
           </figure>
           <p style = "text-align: center;">
+            <a class = "button" href = " ">View Project</a>
             <a class = "button" href = "https://github.com/annanmcleod/valley-catalogue">Source Code</a>
           </p>
         </div>
@@ -260,7 +298,10 @@
 </body>
 
 <button class="fa fa-home myButton" id="top"></button>
+
 <script src = "script.js"></script>
 
+
+<script src="https://kit.fontawesome.com/dceaf17e09.js" crossorigin="anonymous"></script>
 </html>
 
