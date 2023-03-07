@@ -403,7 +403,7 @@ h1:hover span:nth-child(3) {
 .box{
   position:absolute;
   top:-10%;
-  width:100px;
+  width:101px;
   height:70px;
   text-align:center;
   line-height:70px;
