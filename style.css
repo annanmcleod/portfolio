@@ -403,7 +403,7 @@ h1:hover span:nth-child(3) {
 .box{
   position:absolute;
   top:-10%;
-  width:101px;
+  width:100px;
   height:70px;
   text-align:center;
   line-height:70px;
@@ -1559,24 +1559,30 @@ textarea {
 
 @media only screen and (min-width: 1916px) and (max-width: 1922px) {
 
+  .hero {
+    height: 62vh;
+  }
+
   .navbar {
     padding-left: 59%;
     font-size: 35px;
   }
 
   h1 {
-    top: 25%;
+    top: 33%;
     left: 30%;
     margin-right: -353px;
   }
 
   .short {
-    margin: 168px 845px 600px 68px;
-    font-size: 36px;
+    /* margin: 168px 845px 600px 68px; */
+    margin: 271px 845px 600px 68px;
+font-size: 36px;
   } 
 
   .containers{
-    top: 146%;
+    /* top: 146%; */
+    top: 157%;
     left: 54.5%;
     width: 209px;
   }
@@ -2100,8 +2106,6 @@ textarea {
   }
 }
 
-/* DELL */
-
 @media only screen and (min-width: 1250px) and (max-width: 1299px) {
   
 
@@ -2137,49 +2141,7 @@ textarea {
   } 
   
   .containers{
-    top: 220%;
-    /* top: 220%; */
-    left:59%;
-  }
-}
-
-
-@media only screen and (min-width: 1245px) and (max-width: 1257px) {
-  
-
-  .navbar {
-    padding-left: 43%;
-  } 
-    
-  h1 {
-    top: 45%;
-    left: 38%;
-    margin-right: -363px;
-    font-size: 7rem;
-  }
-
-  h1:hover span:nth-child(1) {
-    transform: translateY(-22px);
-  }
-  
-  h1:hover span:nth-child(2) {
-    transform: translateY(22px);
-  }
-  
-  h1 span:nth-child(3) {
-    width: 102%;
-    font-size: 1.2rem;
-    letter-spacing: 0.6rem;
-  }
-
-  .short {
-    margin: 231px 542px 0px 78px;
-    /* margin: 188px 400px 0px 67px; */
-    font-size: 22px;
-  } 
-  
-  .containers{
-    /* top: 197%; */
+    /* top: 210%; */
     top: 220%;
     left:59%;
   }
@@ -2222,6 +2184,49 @@ textarea {
   .containers{
     top: 197%;
     /* top: 220%; */
+    left:59%;
+  }
+}
+
+/* DELL */
+
+@media only screen and (min-width: 1245px) and (max-width: 1257px) {
+  
+
+  .navbar {
+    padding-left: 43%;
+  } 
+    
+  h1 {
+    top: 45%;
+    left: 38%;
+    margin-right: -363px;
+    font-size: 7rem;
+  }
+
+  h1:hover span:nth-child(1) {
+    transform: translateY(-22px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateY(22px);
+  }
+  
+  h1 span:nth-child(3) {
+    width: 102%;
+    font-size: 1.2rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .short {
+    margin: 231px 542px 0px 78px;
+    /* margin: 188px 400px 0px 67px; */
+    font-size: 22px;
+  } 
+  
+  .containers{
+    /* top: 197%; */
+    top: 220%;
     left:59%;
   }
 }
@@ -2958,7 +2963,7 @@ textarea {
   h1 {
     top: 20%;
     left: 50%;
-    margin-right: -52px;
+    margin-right: -71px;
     font-size: 3rem;
   }
   
@@ -3013,7 +3018,7 @@ textarea {
     text-align: center;
     padding: 31px 0;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #896d7e;
   }
 
