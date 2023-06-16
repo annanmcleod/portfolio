@@ -1525,15 +1525,15 @@ textarea {
   }
 
   .myButton {
-    bottom:1.5%;
-    height:90px;
-    width: 90px;
+    bottom: 4%;
+    height:75px;
+    width: 75px;
     font-size: 48px;
    }
   
    .chatOn {
-    bottom: 1.5%;
-    width: 90px;
+    bottom: 4%;
+    width: 75px;
   }
 
   .popup-form {
