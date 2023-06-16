@@ -1482,7 +1482,7 @@ textarea {
   }
 
   .snip1573 h4 {
-    font-size: 0.3em;
+    font-size: 0.35em;
     margin: -86px;
   }
 
@@ -1569,7 +1569,7 @@ textarea {
   }
 
   h1 {
-    top: 33%;
+    top: 38%;
     left: 30%;
     margin-right: -353px;
   }
@@ -1577,7 +1577,7 @@ textarea {
   .short {
     /* margin: 168px 845px 600px 68px; */
     margin: 271px 845px 600px 68px;
-font-size: 36px;
+    font-size: 33px;
   } 
 
   .containers{
@@ -1593,7 +1593,7 @@ font-size: 36px;
   }
   .myButton {
     bottom: 4%;
-    height: 754px;
+    height: 75px;
     width: 75px;
     font-size: 48px;
    }
