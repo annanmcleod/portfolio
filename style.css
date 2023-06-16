@@ -1482,8 +1482,8 @@ textarea {
   }
 
   .snip1573 h4 {
-    font-size: 0.4em;
-    margin: -75px;
+    font-size: 0.3em;
+    margin: -86px;
   }
 
   .card {
@@ -1538,7 +1538,7 @@ textarea {
 
   .popup-form {
     width: 550px;
-    font-size: 35px;
+    font-size: 26px;
   }
   
   .popup-form input[type=text],
@@ -1560,7 +1560,7 @@ textarea {
 @media only screen and (min-width: 1916px) and (max-width: 1922px) {
 
   .hero {
-    height: 62vh;
+    height: 70vh;
   }
 
   .navbar {
@@ -1581,8 +1581,7 @@ font-size: 36px;
   } 
 
   .containers{
-    /* top: 146%; */
-    top: 157%;
+    top: 174%;
     left: 54.5%;
     width: 209px;
   }
@@ -1593,15 +1592,15 @@ font-size: 36px;
 
   }
   .myButton {
-    bottom: 3%;
-    height: 90px;
-    width: 90px;
+    bottom: 4%;
+    height: 754px;
+    width: 75px;
     font-size: 48px;
    }
   
    .chatOn {
-    bottom: 3%;
-    width: 90px;
+    bottom: 4%;
+    width: 74px;
   }
 
   .cat {
