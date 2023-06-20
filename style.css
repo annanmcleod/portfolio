@@ -2113,7 +2113,7 @@ textarea {
   } 
     
   h1 {
-    top: 45%;
+    top: 60%;
     left: 38%;
     margin-right: -363px;
     font-size: 7rem;
@@ -2134,14 +2134,14 @@ textarea {
   }
 
   .short {
-    margin: 265px 542px 0px 92px;
+    margin: 265px 445px 0px 85px;
     /* margin: 188px 400px 0px 67px; */
     font-size: 22px;
   } 
   
   .containers{
     /* top: 210%; */
-    top: 220%;
+    top: 231%;
     left:59%;
   }
 }
@@ -2181,7 +2181,7 @@ textarea {
   } 
   
   .containers{
-    top: 197%;
+    top: 235%;
     /* top: 220%; */
     left:59%;
   }
@@ -2197,7 +2197,7 @@ textarea {
   } 
     
   h1 {
-    top: 45%;
+    top: 57%;
     left: 38%;
     margin-right: -363px;
     font-size: 7rem;
@@ -2218,28 +2218,28 @@ textarea {
   }
 
   .short {
-    margin: 231px 542px 0px 78px;
+    margin: 231px 315px 0px 78px;
     /* margin: 188px 400px 0px 67px; */
-    font-size: 22px;
+    font-size: 24px;
   } 
   
   .containers{
     /* top: 197%; */
-    top: 220%;
-    left:59%;
+    top: 235%;
+    left: 59.5%;
   }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1199px){
 
   .navbar {
-    padding-left: 32%;
+    padding-left: 33%;
   } 
 
   h1 {
-    top: 45%;
+    top: 60%;
     left: 45%;
-    right: -30%;
+    right: -29%;
     font-size: 7rem;
   }
 
@@ -2254,19 +2254,19 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 91%;
+    width: 80.2%;
     font-size: 1.2rem;
     letter-spacing: 0.6rem;
   }
   
   .short {
-    margin: 268px 325px 0px 38px;
-    font-size: 22px;
+    margin: 255px 325px 0px 38px;
+    font-size: 24px;
   } 
   
   .containers{
-    top: 197%;
-    left: 57.6%;
+    top: 235%;
+    left: 59.6%;
   }
 
   .title h2 {
@@ -2291,10 +2291,10 @@ textarea {
   }
   
   h1 {
-    top: 30%;
-    left: 45%;
-    right: -30%;
-    font-size: 5rem;
+    top: 28%;
+    left: 56%;
+    right: -43%;
+    font-size: 6rem;
   }
 
   h1:hover span:nth-child(1) {
@@ -2312,7 +2312,7 @@ textarea {
   }
  
   .short {
-    margin: 220px 380px 500px 29px;
+    margin: 157px 150px 480px 139px;
     font-size: 18px;
   }
 
@@ -2399,10 +2399,10 @@ textarea {
   }
 
   h1 {
-    top: 30%;
-    left: 45%;
-    right: -30%;
-    font-size: 5rem;
+    top: 32%;
+    left: 85%;
+    right: -133%;
+    font-size: 6rem;
   }
   
   h1:hover span:nth-child(1) {
@@ -2414,14 +2414,14 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 81%;
+    width: 52%;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
   }
  
   .short {
-    margin: 235px 300px 500px 31px;
-    font-size: 18px;
+    margin: 159px 51px 500px 51px;
+    font-size: 21px;
   }
 
   .short a {
@@ -2507,10 +2507,10 @@ textarea {
   }
   
   h1 {
-    top: 30%;
-    left: 45%;
-    right: -33%;
-    font-size: 5rem;
+    top: 35%;
+    left: 81%;
+    right: -131%;
+    font-size: 6rem;
   }
   
   h1:hover span:nth-child(1) {
@@ -2522,14 +2522,14 @@ textarea {
   }
   
   h1 span:nth-child(3) {
-    width: 90%;
+    width: 59%;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
   }
  
   .short {
-    margin: 235px 150px 500px 18px;
-    font-size: 18px;
+    margin: 179px 6px 500px 46px;
+    font-size: 21px;
   }
 
   .short a {
@@ -2597,7 +2597,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 696px) {
+@media only screen and (max-width: 698px) {
     
   .hero {
     height: 60vh;
@@ -2614,10 +2614,10 @@ textarea {
   }
   
   h1 {
-    top: 30%;
-    left: 52%;
-    right: -48%;
-    font-size: 4.7rem;
+    top: 35%;
+    left: 80.5%;
+    right: -131%;
+    font-size: 5.5rem;
   }
   
   h1:hover span:nth-child(1) {
@@ -2635,8 +2635,8 @@ textarea {
   }
  
   .short {
-    margin: 235px 79px 500px 31px;
-    font-size: 18px;
+    margin: 179px 27px 500px 35px;
+    font-size: 21px;
   }
 
   .short a {
