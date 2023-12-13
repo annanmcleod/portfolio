@@ -13,18 +13,6 @@
     }
 } 
 
-// chat button
-sn.onclick = function () {
-  window.scrollTo(0,0);
-}
-
-function openForm() {
-            document.getElementById("myForm").style.cssText = "display: block;";
-        }
-        function closeForm() {
-            document.getElementById("myForm").style.cssText = "display: none;";
-        }
-
 // cat animation
         function init() { 
 const catWrapper = document.querySelector('.cat_wrapper')
