@@ -925,87 +925,6 @@ path {
   z-index: 30;
  }
 
- .chatOn {
-  padding: 3px;
-  z-index: 99;
-  cursor: pointer;
-  box-shadow: 0px 0px 22px 0px;
-  color: #657d68;
-  position: fixed;
-  bottom: 3%;
-  right: 2%;
-  transition: .5s;
-  width: 50px;
-  border-radius: 10px;
-  background-color: #657d68;
-}
-
-/* The popup form - hidden by default */
-.chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 2%;
-  right: 15px;
-  border: 3px solid #657d68;
-  z-index: 999;
-  transition: 1s;
-}
-
-/* Add styles to the form container */
-.popup-form {
-  width: 300px;
-  padding: 10px;
-  background-color: rgb(21, 15, 15);
-  color: white;
-  font-family: 'Playfair Display', serif;
-}
-
-/* Full-width input fields */
-.popup-form input[type=text],
-.popup-form input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-textarea {
-  width: 100%;
-  height: 120px;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.popup-form input[type=text]:focus,
-.popup-form input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.popup-form .button {
-  background-color: rgb(26 37 27);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 49%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 4px solid #657d68;
-  font-family: 'Playfair Display', serif;
-}
-
-.popup-form .chatOff {
-  background-color: rgb(26 37 27);
-}
-
 /* FOOTER ENDS */
 
 
@@ -1174,37 +1093,7 @@ textarea {
       width: 120px;
       font-size: 60px;
       }
-    
-      .chatOn {
-      right: 1%;
-      bottom: 2%;
-      width: 120px;
-    }
-    
-    .chat-popup {
-      border: 7px solid rgb(108, 60, 84);
-    }
-    
-    .popup-form {
-      width: 700px;
-      padding: 30px;
-      font-size: 35px;
-    }
-    
-    .popup-form input[type=text],
-    .popup-form input[type=password] {
-      font-size: 35px;
-    }
-    
-    textarea {
-      height: 220px;
-      font-size: 35px;
-    }
-    
-    .popup-form .button {
-      font-size: 35px;
-      border: 7px solid rgb(108, 60, 84);
-    }
+  
 }
 
 @media only screen and (width: 2553px){
@@ -1379,37 +1268,6 @@ textarea {
     width: 120px;
     font-size: 60px;
     }
-  
-    .chatOn {
-    right: 1%;
-    bottom: 3%;
-    width: 120px;
-  }
-  
-  .chat-popup {
-    border: 7px solid rgb(108, 60, 84);
-  }
-  
-  .popup-form {
-    width: 700px;
-    padding: 30px;
-    font-size: 35px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 35px;
-  }
-  
-  textarea {
-    height: 220px;
-    font-size: 35px;
-  }
-  
-  .popup-form .button {
-    font-size: 35px;
-    border: 7px solid rgb(108, 60, 84);
-  }
 }
 
 @media only screen and (min-width: 1602px) and (max-width: 2552px) {
@@ -1530,30 +1388,6 @@ textarea {
     width: 75px;
     font-size: 48px;
    }
-  
-   .chatOn {
-    bottom: 4%;
-    width: 75px;
-  }
-
-  .popup-form {
-    width: 550px;
-    font-size: 26px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 25px;
-  }
-  
-  textarea {
-    font-size: 25px;
-  }
-
-  .popup-form .button {
-    font-size: 25px;
-    border: 7px solid rgb(108, 60, 84);
-  }
 }
 
 
@@ -1597,11 +1431,7 @@ textarea {
     width: 75px;
     font-size: 42px;
    }
-  
-   .chatOn {
-    bottom: 4%;
-    width: 74px;
-  }
+
 
   .cat {
     position: absolute;
@@ -1728,30 +1558,6 @@ textarea {
     width: 90px;
     font-size: 48px;
    }
-  
-   .chatOn {
-    bottom: 1.5%;
-    width: 90px;
-  }
-
-  .popup-form {
-    width: 550px;
-    font-size: 35px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 25px;
-  }
-  
-  textarea {
-    font-size: 25px;
-  }
-
-  .popup-form .button {
-    font-size: 25px;
-    border: 7px solid rgb(108, 60, 84);
-  }
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1500px) {
@@ -1866,30 +1672,6 @@ textarea {
     width: 90px;
     font-size: 48px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 90px;
-  }
-
-  .popup-form {
-    width: 550px;
-    font-size: 35px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 25px;
-  }
-  
-  textarea {
-    font-size: 25px;
-  }
-
-  .popup-form .button {
-    font-size: 25px;
-    border: 7px solid rgb(108, 60, 84);
-  }
 }
 
 @media only screen and (height: 1396px) and (width: 1904px){
@@ -2059,37 +1841,6 @@ textarea {
     height:120px;
     width: 120px;
     font-size: 60px;
-  }
-  
-    .chatOn {
-    right: 1%;
-    bottom: 2%;
-    width: 120px;
-  }
-  
-  .chat-popup {
-    border: 7px solid rgb(108, 60, 84);
-  }
-  
-  .popup-form {
-    width: 700px;
-    padding: 30px;
-    font-size: 35px;
-  }
-  
-  .popup-form input[type=text],
-  .popup-form input[type=password] {
-    font-size: 35px;
-  }
-  
-  textarea {
-    height: 220px;
-    font-size: 35px;
-  }
-  
-  .popup-form .button {
-    font-size: 35px;
-    border: 7px solid rgb(108, 60, 84);
   }
 }
 
@@ -2374,12 +2125,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
 }
 
  @media only screen and (max-width: 891px) {
@@ -2482,12 +2227,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
 } 
 
 @media only screen and (max-width: 799px) {
@@ -2589,12 +2328,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
 }
 
 @media only screen and (max-width: 698px) {
@@ -2696,12 +2429,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -2807,12 +2534,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
 }
  
 @media only screen and (max-width: 499px) {
@@ -2925,12 +2646,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
  }  
 
  @media only screen and (max-width: 399px) {
@@ -3044,12 +2759,6 @@ textarea {
     height:45px;
     width: 45px;
    }
-  
-   .chatOn {
-    bottom: 3%;
-    width: 45px;
-    background-color: #657d68;
-  }
  }  
 
  /* @MEDIA ENDS */
