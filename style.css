@@ -396,8 +396,8 @@ h1:hover span:nth-child(3) {
 
 .containers{
   position:absolute;
-  top: 197%;
-  left: 58%;
+  top: 247%;
+  left: 57.2%;
   transform:translate(-50%,-50%);
   width:209px;
   height:55px;
@@ -635,7 +635,7 @@ top: -10%;
 }
 
 .card .button {
-  border: 2px solid #657d68;
+  border: 5px solid #657d68;
   cursor: pointer;
   border-radius: 12px;
 }
@@ -943,7 +943,7 @@ path {
  @media only screen and (min-width: 2558px){
 
     h1 {
-      top: 45%;
+      top: 50%;
       left: 35%;
       font-size: 13.5rem;
     }
@@ -964,7 +964,7 @@ path {
     }
     
     .short {
-      margin: 550px 980px 600px 95px;
+      margin: 471px 959px 600px 120px;
       font-size: 52px;
     } 
     
@@ -1003,11 +1003,11 @@ path {
     }
     
     .containers{
-      top:196%;
-      left:53.4%;
-      width:409px;
-      height:95px;
-      border: 7px solid #6e3a4a;
+      top: 299.5%;
+      left: 53.4%;
+      width: 409px;
+      height: 95px;
+      border: 7px solid #89938a;
     }
     .box{
       width:300px;
@@ -1066,12 +1066,12 @@ path {
     }
     
     .card .button {
-      border: 5px solid #6e3a4a;
+      border: 5px solid #657d68;
       border-radius: 12px;
     }
     
     .card .button:hover {
-      border: 5px solid #835467;
+      border: 5px solid #435d46;
     }
     
     footer .footer-below {
@@ -1182,7 +1182,7 @@ path {
     left:53.5%;
     width:409px;
     height:95px;
-    border: 7px solid #6e3a4a;
+    border: 7px solid #89938a;
   }
   .box{
     width:300px;
@@ -1241,12 +1241,12 @@ path {
   }
   
   .card .button {
-    border: 5px solid #6e3a4a;
+    border: 5px solid #657d68;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 5px solid #835467;
+    border: 5px solid #435d46;
   }
   
   footer .footer-below {
@@ -1364,15 +1364,15 @@ path {
   }
   
   .card .button {
-    border: 2px solid #6e3a4a;
+    border: 5px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #835467;
+    border: 2px solid #435d46;
     cursor: pointer;
-    background-color: #c488a1;
+    background-color: #657d68;
   }
   
   .outer_wrapper {
@@ -1534,15 +1534,15 @@ path {
   }
   
   .card .button {
-    border: 2px solid #6e3a4a;
+    border: 5px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #835467;
+    border: 2px solid #435d46;
     cursor: pointer;
-    background-color: #c488a1;
+    background-color: #657d68;
   }
   
   .outer_wrapper {
@@ -1654,15 +1654,15 @@ path {
   }
   
   .card .button {
-    border: 2px solid #6e3a4a;
+    border: 5px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #835467;
+    border: 2px solid #435d46;
     cursor: pointer;
-    background-color: #c488a1;
+    background-color: #657d68;
   }
   
   .outer_wrapper {
@@ -1757,7 +1757,7 @@ path {
     left:59.8%;
     width:409px;
     height:95px;
-    border: 7px solid #6e3a4a;
+    border: 7px solid #89938a;
   }
   .box{
     width:300px;
@@ -1820,12 +1820,12 @@ path {
   }
   
   .card .button {
-    border: 5px solid #6e3a4a;
+    border: 5px solid #657d68;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 5px solid #835467;
+    border: 2px solid #435d46;
   }
   
   footer .footer-below {
