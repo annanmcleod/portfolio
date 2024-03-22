@@ -64,7 +64,6 @@ nav {
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .navbar ul li a:hover {
