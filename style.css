@@ -635,13 +635,13 @@ top: -10%;
 }
 
 .card .button {
-  border: 5px solid #657d68;
+  border: 3px solid #657d68;
   cursor: pointer;
   border-radius: 12px;
 }
 
 .card .button:hover {
-  border: 2px solid #435d46;
+  border: 3px solid #435d46;
   cursor: pointer;
   background-color: #657d68;
 }
@@ -1066,12 +1066,12 @@ path {
     }
     
     .card .button {
-      border: 5px solid #657d68;
+      border: 3px solid #657d68;
       border-radius: 12px;
     }
     
     .card .button:hover {
-      border: 5px solid #435d46;
+      border: 3px solid #435d46;
     }
     
     footer .footer-below {
@@ -1241,12 +1241,12 @@ path {
   }
   
   .card .button {
-    border: 5px solid #657d68;
+    border: 3px solid #657d68;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 5px solid #435d46;
+    border: 3px solid #435d46;
   }
   
   footer .footer-below {
@@ -1364,13 +1364,13 @@ path {
   }
   
   .card .button {
-    border: 5px solid #657d68;
+    border: 3px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #435d46;
+    border: 3px solid #435d46;
     cursor: pointer;
     background-color: #657d68;
   }
@@ -1534,13 +1534,13 @@ path {
   }
   
   .card .button {
-    border: 5px solid #657d68;
+    border: 3px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #435d46;
+    border: 3px solid #435d46;
     cursor: pointer;
     background-color: #657d68;
   }
@@ -1654,13 +1654,13 @@ path {
   }
   
   .card .button {
-    border: 5px solid #657d68;
+    border: 3px solid #657d68;
     cursor: pointer;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #435d46;
+    border: 3px solid #435d46;
     cursor: pointer;
     background-color: #657d68;
   }
@@ -1777,6 +1777,11 @@ path {
     padding:30px;
     font-size:4rem;
   }
+
+  .containers {
+    top: 267%;
+    left: 58%;
+  }
   .containers:hover .ones{
     transform:translateX(-300px);
   }
@@ -1820,12 +1825,12 @@ path {
   }
   
   .card .button {
-    border: 5px solid #657d68;
+    border: 3px solid #657d68;
     border-radius: 12px;
   }
   
   .card .button:hover {
-    border: 2px solid #435d46;
+    border: 3px solid #435d46;
   }
   
   footer .footer-below {
