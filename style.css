@@ -376,6 +376,14 @@ h1:hover span:nth-child(3) {
   margin-left: 5%;
 }
 
+.about a {
+  text-decoration: none;
+  color: rgb(162, 95, 129);
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #727f70;
+}
+
 .paragraphs {
   font-family: 'Alice', serif;
   color: white;
