@@ -40,6 +40,7 @@ nav {
   padding-left: 53%;
   font-size: 28px;
   font-family: 'Alice', serif;
+  text-transform: lowercase;
 } 
 
 /* full screen nav */
@@ -53,6 +54,7 @@ nav {
   padding-bottom: 10px;
   padding-left: 50%;
   font-size: 28px;
+  text-transform: lowercase;
 } 
 
 .navbar ul li {
