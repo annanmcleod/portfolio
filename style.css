@@ -396,8 +396,8 @@ h1:hover span:nth-child(3) {
 
 .containers{
   position:absolute;
-  top: 247%;
-  left: 57.2%;
+  top: 266%;
+  left: 58%;
   transform:translate(-50%,-50%);
   width:209px;
   height:55px;
@@ -1918,7 +1918,7 @@ path {
   } 
     
   h1 {
-    top: 45%;
+    top: 57%;
     left: 38%;
     margin-right: -363px;
     font-size: 7rem;
@@ -1939,13 +1939,13 @@ path {
   }
 
   .short {
-    margin: 265px 542px 0px 72px;
+    margin: 253px 542px 0px 68px;
     /* margin: 188px 400px 0px 67px; */
     font-size: 22px;
   } 
   
   .containers{
-    top: 235%;
+    top: 256%;
     /* top: 220%; */
     left:59%;
   }
