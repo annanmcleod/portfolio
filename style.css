@@ -1418,12 +1418,12 @@ path {
 
   .short {
     /* margin: 168px 845px 600px 68px; */
-    margin: 271px 845px 600px 68px;
+    margin: 271px 845px 600px 60px;
     font-size: 33px;
   } 
 
   .containers{
-    top: 178%;
+    top: 195%;
     left: 54.7%;
     width: 209px;
   }
@@ -1451,14 +1451,14 @@ path {
 @media only screen and (min-width: 1501px) and (max-width: 1601px) {
   
   .hero {
-    height: 50vh;
+    height: 100vh;
   }
 
   h1 {
-    top: 22%;
-    left: 40%;
+    top: 56%;
+    left: 32%;
     margin-right: -353px;
-    font-size: 9rem;
+    font-size: 7rem;
   }
 
   h1:hover span:nth-child(1) {
@@ -1470,13 +1470,13 @@ path {
   }
   
   h1 span:nth-child(3) {
-    width: 102%;
-    font-size: 1.6rem;
+    width: 101%;
+    font-size: 1.3rem;
     letter-spacing: 0.6rem;
   }
 
   .short {
-    margin: 482px 400px 600px 99px;
+    margin: 234px 619px 600px 78px;
     font-size: 49px;
   } 
 
@@ -1489,8 +1489,8 @@ path {
   }
   
   .containers{
-    top: 192%;
-    left: 54.6%;
+    top: 310%;
+    left: 58%;
     width:209px;
   }
 
@@ -1863,9 +1863,19 @@ path {
     padding-left: 47%;
   } 
 
+  .h1 {
+    top: 61%;
+    left: 36%;
+  }
+
   .short {
-    margin: 273px 542px 0px 67px;
+    margin: 257px 542px 0px 67px;
     font-size: 22px;
+  }
+
+  .containers {
+    top: 265%;
+    left: 59%;
   }
 }
 
@@ -1905,8 +1915,8 @@ path {
   
   .containers{
     /* top: 210%; */
-    top: 237%;
-    left:59%;
+    top: 264.5%;
+    left: 59.2%;
   }
 }
 
